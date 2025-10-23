@@ -5,223 +5,131 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
-    <title>Lab</title>
+    <title>Dynasty Warriors</title>
 </head>
 
 <body id="lab-text">
-
     <h1>Dynasty Warriors</h1>
-    <h2>Wei</h2>
-    <h3>Wu</h3>
-    <h4>Shu</h4>
+    <span>
+        <h2>Wei</h2>
+    </span>
+    <span>
+        <h3>Wu</h3>
+    </span>
+    <span>
+        <h4>Shu</h4>
+    </span>
+    <p>Dynasty Warriors is a series of Japanese hack and slash action video games created by Omega Force and
+        Koei. The series is a spin-off of Koei's turn-based strategy Romance of the Three Kingdoms series,
+        based upon the Chinese novel of the same name, which is a romanticised retelling of the Chinese
+        Three Kingdoms period.</p>
+    <a href="https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwipy4yGxJeQAxXRRjABHf5uIzYQPAgI" target="_blank">Hello
+        World</a></h4>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
 
-    <p>Dynasty Warriors is a series of Japanese hack and slash action video games created by Omega Force and Koei. The
-        series is a spin-off of Koei's turn-based strategy Romance of the Three Kingdoms series, based upon the Chinese
-        novel of the same name, which is a romanticised retelling of the Chinese Three Kingdoms period.</p>
-    <h5>The <span id="three-kingdoms">Three</span> Kingdoms</h5>
+    <p class="article">
+    <p>The Three Kingdoms</P>
     <p>Wei, Wu, Shu</p>
+    <p class="list">
     <ul>
         <li>Cao Cao</li>
         <li>Sun Quan</li>
         <li>Liu Bei</li>
     </ul>
-
-    <form action="/api/vi/journals" method="post">
-        <label for="main-allegiance">Choose your Lord</label>
-        <input id="main-allegiance" type="text" name="allegiance" placeholder="Lord">
-
-        <br>
-
-        <label for="start-time"> When can you start?</label>
-        <select id="start-time" name="starts">
-            <option value="now">Now</option>
-            <option value="later">Later</option>
-            <option value="never">Never</option>
-        </select>
-
-        <br>
-
-        <label for="reason-allegiance">Why choose this allegiance?</label>
-        <div><textarea id="reason-allegiance" name="reason" placeholder="Reason" cols="30" rows="5">
-        </textarea></div>
-        <button type="submit">Enter</button>
-    </form>
-
-    <br>
-
-    <form action="/api/v1/journals" method="get">
-        <label for="search-bar">Search</label>
-        <input id="search-bar" type="text" name="search" placeholder="Search">
-
-        <label for="journal-category">Journal Category</label>
-        <select id="journal-category" name="category">
-            <option value="idea">Idea</option>
-            <option value="task">Task</option>
-            <option value="memory">Memory</option>
-        </select>
-        <button type="submit">Submit</button>
-    </form>
-
-    <br>
-
-    <form action="/Kingdoms/Rulers" method="post">
-        <input id="ruler-1" name="Cao Cao" type="checkbox" /></div>
-        <label for="ruler-1">Cao Cao</label>
-
-        <input id="ruler-2" name="Sun Quan" type="checkbox" /></div>
-        <label for="ruler-2">Sun Quan</label>
-
-        <input id="ruler-3" name="Liu Bei" type="checkbox" /></div>
-        <label for="ruler-2">Liu Bei</label>
-        <button type="submit">Submit</button>
-    </form>
-
-    <br>
-
-    <form action="/Kingdoms/Rulers">
-        <input id="Wei" type="radio" name="kingdom" value="wei" />
-        <label for="Wei">Wei</label>
-
-        <input id="Wu" type="radio" name="kingdom" value="wu" />
-        <label for="Wu">Wu</label>
-
-        <input id="Shu" type="radio" name="kingdom" value="shu" />
-        <label for="Shu">Shu</label>
-        <button type="submit">Submit</button>
-    </form>
-
-    <br>
-
-    <table>
-        <thead>
-            <tr>
-                <th>Event</th>
-                <th>Fight</th>
-                <th>Venue</th>
-                <th>City</th>
-                <th>PPV</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>UFC 189</td>
-                <td>Mendes vs. McGregor</td>
-                <td rowspan="3">MGM Grand</td>
-                <td rowspan="4">Las Vegas</td>
-                <td>825,000</td>
-            </tr>
-            <tr>
-                <td>UFC 196</td>
-                <td>Aldo vs McGregor</td>
-                <td>1,200,00</td>
-            </tr>
-            <tr>
-                <td>UFC 196</td>
-                <td>McGregor vs Diaz</td>
-                <td>1,317,000</td>
-            </tr>
-            <tr>
-                <td>UFC 202</td>
-                <td>Diaz vs McGregor 2</td>
-                <td>T-Mobile</td>
-                <td>1,650,00</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <td colspan="4">Total Sales</td>
-                <td>4,992,000</td>
-            </tr>
-        </tfoot>
-    </table>
-
-    <br>
-
     <p>Among other lords.</p>
+    </p>
 
-    <p>The Three Kingdoms of Cao Wei, Shu Han, and Eastern Wu dominated China from AD 220 to 280 following the end of
-        the Han dynasty.[1] This period was preceded by the Eastern Han dynasty and followed by the Western Jin dynasty.
-        Academically, the periodisation begins with the establishment of Cao Wei in 220 and ends with the conquest of Wu
-        by Jin in 280. The period immediately preceding the Three Kingdoms, from 184 to 220, was marked by chaotic
-        infighting among warlords across China as Han authority collapsed. The period from 220 to 263 was marked by a
-        comparatively stable arrangement between Cao Wei, Shu Han, and Eastern Wu. This stability broke down with the
-        conquest of Shu by Wei in 263, followed by the usurpation of Cao Wei by Jin in 266 and ultimately the conquest
-        of Wu by Jin in 280.</p>
+    <p>The Three Kingdoms of Cao Wei, Shu Han, and Eastern Wu dominated China from AD 220 to 280 following
+        the end of the Han dynasty.[1] This period was preceded by the Eastern Han dynasty and followed by
+        the Western Jin dynasty. Academically, the periodisation begins with the establishment of Cao Wei in
+        220 and ends with the conquest of Wu by Jin in 280. The period immediately preceding the Three
+        Kingdoms, from 184 to 220, was marked by chaotic infighting among warlords across China as Han
+        authority collapsed. The period from 220 to 263 was marked by a comparatively stable arrangement
+        between Cao Wei, Shu Han, and Eastern Wu. This stability broke down with the conquest of Shu by Wei
+        in 263, followed by the usurpation of Cao Wei by Jin in 266 and ultimately the conquest of Wu by Jin
+        in 280.</p>
 
-    <section>
+    <ul>
+        <li> <a href="https://waapple.org/wp-content/uploads/2021/06/Variety_Cosmic-Crisp-transparent-300x300.png"
+                target="_blank">Apples</a></li>
+        <li>Banana</li>
+        <li>Grapes</li>
+    </ul>
+
+    <ol>
+        <li> <a href="https://waapple.org/wp-content/uploads/2021/06/Variety_Cosmic-Crisp-transparent-300x300.png"
+                target="_blank">Apples</a></li>
+        <li>Banana</li>
+        <li>Grapes</li>
         <ol>
-            <li>Apples</li>
-            <li>Banana</li>
-            <li>Grapes</li>
-        </ol>
 
-        <ol type="I">
-            <li>Brocoli</li>
-        </ol>
-        <ol type="A">
-            <li>Gross</li>
-        </ol>
+            <ol type="I">
+                <li>Brocoli</li>
+                <ol type="A">
+                    <li>Gross</li>
+                </ol>
 
-        <ol>
-            <li>Groceries
-                <ul>
-                    <li>Apples</li>
-                    <li>Bread</li>
-                    <li>Milk</li>
-                </ul>
-            </li>
-            <li>Electronics
-                <ul>
-                    <li>Headphones</li>
-                    <li>Charger</li>
-                </ul>
-            </li>
-            <li>Clothing</li>
-        </ol>
+                <li>Celery</li>
+                <ol type="A">
+                    <li>Also gross.</li>
+                </ol>
 
-        <dl>
-            <dt>Apples</dt>
-            <dd>- They are gooooood.</dd>
-        </dl>
+                <li>Lettuce</li>
+                <ol type="A">
+                    <li>Mid.</li>
+                </ol>
 
-        <p style="color: blue;">H<sub>2</sub>0</p>
-        <p style="color: red;">10<sup>2</sup></p>
-    </section>
+                <dl>
+                    <dt>Apples</dt>
+                    <dd>- They are gooooood.</dd>
+                </dl>
 
-    <section>
-        <span>baba</span>
-        <span>booey</span>
+                <p style="color: blue;">H<sub>2</sub>0</p>
+                <p style="color: red;">10<sup>2</sup></p>
 
-        <a class="btn-filled" href="">baba</a>
-        <a class="btn-outline" href="">booey</a>
-    </section>
+                </section>
 
-    <section>
-        <div class="div-dif"></div>
-        <div class="div-dif2"></div>
-        <div class="box-1"></div>
-        <div class="box-2"></div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, optio eius quos inventore praesentium <span
-                class="inline-element">facilis</span> consectetur ex maxime blanditiis laudantium, saepe labore
-            quisquam, vitae nulla? In, odit. Commodi, veniam.</p>
+                <section>
+                    <span>baba</span>
+                    <span>booey</span>
 
-        <a href="">Register</a>
-        <a href="">Login</a>
-    </section>
+                    <div>baba</div>
+                    <div>booey</div>
+                </section>
 
-    <section>
-        <div><input id="email" name="user-email" type="text" placeholder="Enter Your Username" maxlength="20" required>
-        </div>
-        <div><input id="password" name="user-password" type="password" placeholder="Password" maxlength="20" required>
-        </div>
-        <div><input type="date" /></div>
-    </section>
+                <br></br>
 
-    <section>
-        <iframe src="http://giraffeacademy.com/" frameborder="0" width="1000" height="800">Sorry</iframe>
-    </section>
+                <section>
+                    <div><input type="text" Value="Enter Your Username" /></div>
+                    <div><input type="password" /></div>
+                    <div><input type="date" /></div>
+                    <div><input type="range" /></div>
+                    <div><input type="file" /></div>
+                    <div><input type="checkbox" /></div>
+                    <div><input type="checkbox" /></div>
+                    <div><input name="btn" type="radio" /></div>
+                    <div><input name="btn" type="radio" /></div>
+                    <form>
+                        <div><input type="submit" /></div>>
+                    </form>
+                    <br></br>
+                    <textarea rows="10" cols="30">
+            Enter a Message
+            </textarea>
+                </section>
+
+                <section>
+
+                    <iframe src="http://giraffeacademy.com/" frameborder="0" width="1000" height="800">Sorry</iframe>
+
+                </section>
+
 </body>
 
 </html>
