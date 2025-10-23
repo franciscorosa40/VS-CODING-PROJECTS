@@ -1,0 +1,241 @@
+/* 
+
+-----------TYPOGRAPHY-----------
+
+FONT SIZES
+16px / 20px / 25px / 35px / 50px / 62px
+
+FONT WEIGHTS
+400 / 700
+
+LINE HEIGHTS
+1.5
+
+LETTER SPACING
+-2px / -1px / 1px / 3px
+
+FONT FAMILY
+Roboto
+
+-----------COLORS-----------
+
+PRIMARY
+Base: #511361 - DQ Purple
+Tint: 
+Shade: 
+
+SECONDARY
+Base: 
+Tint: 
+Shade: 
+
+TERTIARY
+Base: 
+Tint: 
+Shade: 
+
+GREY
+Base: 
+Tint: 
+Shade:
+
+*/
+
+/*--------------GLOBAL STYLES------------ */
+
+body {
+    font-weight: 700;
+    background-color: rgb(235, 231, 227);
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: -2px;
+    color: #212529;
+}
+
+h2 {
+    font-size: 35px;
+    color: white;
+    background-color: #461368;
+    padding: 15px;
+    border: 2px solid #461368;
+    border-radius: 10px;
+
+    text-transform: capitalize;
+    letter-spacing: 2.5px;
+
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    font-size: 62px;
+    text-transform: capitalize;
+    margin-bottom: -5px;
+}
+
+h4 {
+    font-weight: 350;
+    font-size: 25px;
+    color: #511361;
+    letter-spacing: -1px;
+}
+
+p,
+a {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+a {
+    font-size: 15px;
+    text-decoration: none;
+    color: rgb(0, 255, 200);
+}
+
+a:hover {
+    color: gold;
+}
+
+a:active {
+    color: white;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 0;
+}
+
+li {
+    margin: 0 10px;
+}
+
+/*--------------BUTTONS------------ */
+
+.btn {
+    text-decoration: none;
+    padding: 12px 30px;
+    display: block;
+    margin-bottom: 10px;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+    color: rgb(0, 255, 200);
+    background-color: #461368;
+    border: 2px solid rgba(255, 208, 0, 0.747);
+    border-radius: 50px;
+}
+
+.btn-primary:hover {
+    color: gold;
+    background-color: #511361;
+}
+
+.btn-primary:active {
+    color: white;
+}
+
+/*--------------IDs & CLASSES------------ */
+
+.walt-quote {
+    font-weight: 500;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 3px;
+}
+
+.log-in {
+    font-size: 20px;
+}
+
+.nav-bar {
+    font-size: 27px;
+    background-color: #461368;
+    color: rgb(0, 255, 200);
+    width: max-content;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 11px;
+    border: 2px solid rgba(255, 208, 0, 0.747);
+    border-radius: 15px;
+    letter-spacing: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-color: black;
+    margin: 20px 0;
+}
+
+.social-icons {
+    width: 20px;
+    height: 20px;
+}
+
+.small-text {
+    font-size: 15px;
+    font-style: italic;
+}
+
+.thumbnail-captions {
+    letter-spacing: 2px;
+}
+
+.paragraph-links {
+    color: #461368;
+}
+
+.fun-meter {
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    width: 150px;
+    height: 150px;
+    padding: 50px;
+    border: 2px solid rgba(255, 208, 0, 0.747);
+    border-radius: 300px;
+
+    /* Flexbox properties for vertical and horizontal centering */
+    display: flex;
+    /* 1. Enable flexbox layout */
+    justify-content: center;
+    /* 2. Center items horizontally */
+    align-items: center;
+    /* 3. Center items vertically */
+}
+
+.fun-content {
+    /* Set items inside fun-content to stack vertically */
+    display: flex;
+    flex-direction: column;
+
+    /* Center the stacked items */
+    align-items: center;
+    text-align: center;
+}
+
+.contact-us-form {
+    color: white;
+    letter-spacing: 1px;
+    border: rgba(255, 208, 0, 0.747);
+    border-width: 5px;
+    border-style: solid;
+    background-color: #461368;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    border-radius: 50px;
+}

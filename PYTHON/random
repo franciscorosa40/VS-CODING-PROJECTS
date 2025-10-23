@@ -1,0 +1,14 @@
+#print ("Hello, Welcome to Robo Coffee!")
+
+#name = input("What is your name? ")
+
+#if name == "Ben":
+    #print ("You are not welcome here Evil Ben! Get out!")
+#else: 
+    #print ("Hello " + name + ". Thanks for coming in.")
+
+if 1 > 2 :
+    print("Yep, it's true!")
+    print ("Yeah you got it.")
+else:
+    print ("Nope, not true.")

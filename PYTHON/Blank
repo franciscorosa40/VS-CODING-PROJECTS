@@ -1,0 +1,19 @@
+name = "Fran"
+
+age = 29
+
+actual_age = 29.75
+
+#print (name) 
+#print (age)
+#print(type (name))
+#print(type (age))
+#print(type (actual_age))
+
+math = 5 * 5 + 5 - 5 / 5
+
+print (math)
+
+results = age + actual_age + math
+
+print (results)

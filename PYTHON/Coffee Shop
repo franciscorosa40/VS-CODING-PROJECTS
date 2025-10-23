@@ -1,0 +1,30 @@
+#Let's build a robot barista.
+
+print ("Hello, Welcome to Robo Coffee!")
+
+name = input("What is your name? ")
+
+if name == "Ben":
+    print ("You are not welcome here Evil Ben! Get out!")
+    exit()
+else: 
+    print ("Hello " + name + ". Thanks for coming in.")
+
+menu = "black coffee, cafe con leche, latte"
+
+order = input(name + ", what would you like from our menu? Here is what we have.\n" + menu + "\n")
+
+price = 5
+
+quantity = input("Sounds good " + name + ", we will get that " + order + " ready for you. How many " + order + "s would you like? They are $" + str(price) + " each. ")
+
+print ("Splendid. Just a moment while I bring that to you, " + name + ".")
+
+total = price * int(quantity)
+
+payment_method = "credit card, cash, or Apple Pay"
+
+tender = input("Here is your " + order + ", " + name + ". Your total comes out to $" + str(total) + ". How will you pay? You can choose between\n" + payment_method + ".")
+
+print("Understood. You will be paying $" + str(total) + " via " + tender + ".\n" + "We thank you for coming!")
+

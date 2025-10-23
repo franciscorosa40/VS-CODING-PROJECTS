@@ -1,0 +1,27 @@
+name = input("Hello pretty lady.\n" + "Who might you be>? ")
+
+menu = "Magic Kingdom, EPCOT, Hollywood Studios, or the Animal Kingdom"
+
+if name == "Babushka":
+    print ("Oh God, it's you! Begone thot!")
+    exit()
+else:
+    order = input("Ah, " + name + ", a fine name for a fine lady.\n" + "Would you like to go on a date to " + menu + "? ")
+
+menu1 = "bus, car, or a Minnie Van"
+
+order1 = input(name + ", we are on the same wavelength, babygirl. I love " + order + " so much.\n" + "Hey should we take the " + menu1 + "? ")
+
+print ("You are one dynamite gal, " + name + "." + " Only the girl of my dreams would have suggested taking a " + order1 + " to " + order + ".\n" + "Let's have a magical day.")
+
+price = 20
+
+quantity = 2
+
+answer = input ("Are you sure you want to take the " + menu1 + "? This would cost $" + str(price) + ". ")
+
+if answer == "Yes":
+    print ("Splendid. In this case if we wish to take seperate " + menu1 + "then it would come out to " + str(quantity * price) + ".")
+else:
+    print ("That's fine, we can just walk then!")
+    exit ()
