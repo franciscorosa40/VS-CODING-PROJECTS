@@ -1,0 +1,233 @@
+/*
+
+-------COLORS-------
+Primary
+EE747E- Light Crimson
+E63946- Crimson
+A12831- Dark Crimson
+
+Secondary
+8FB0C4- Light Jeans
+457B9D- Jeans
+294A5E- Dark Jeans
+
+Tertiary
+C2E5E7- Light Sky
+A8DADC- Sky
+76999A- Dark Sky
+
+Grey
+617289-Light Night
+1D3557-Night
+14253D-Dark Night
+
+*/
+
+body {
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.2;
+    color: #1D3557
+}
+
+h1 {
+    font-size: 62px;
+    text-align: center;
+    letter-spacing: -3.6px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+    font-size: 40px;
+    display: inline-block;
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+h2 {
+    text-align: left;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: right;
+    color: 588157;
+}
+
+h5 {
+    display: block;
+    text-align: center;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+p {
+    text-align: center;
+    letter-spacing: 8px;
+    line-height: 1.6;
+    color: #14253D
+}
+
+a {
+    text-align: center;
+    background-color: aquamarine;
+    padding: 20px 40px;
+}
+
+ul {
+    list-style: circle;
+}
+
+li {
+    color: green;
+    font-size: 25px;
+    font-weight: 300;
+    text-decoration: underline blue dotted;
+}
+
+dt {
+    color: purple;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+h1~p {
+    text-decoration: underline;
+}
+
+/*--------------COMPONENTS------------ */
+
+/*
+a:link {
+    color: blue
+}
+
+a:visited {
+    color: red
+}
+    */
+
+a:hover {
+    color: green;
+}
+
+a:active {
+    color: yellow
+}
+
+li:first-child {
+    color: red;
+}
+
+li:nth-child(3) {
+    color: green;
+}
+
+li:last-child {
+    color: blue
+}
+
+p::first-letter {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+p::selection {
+    color: blue;
+}
+
+h1::after {
+    content: 'Beta';
+    font-size: 30px;
+    color: purple;
+}
+
+#three-kingdoms {
+    color: purple;
+}
+
+.article p {
+    color: green;
+    font-size: 30px;
+}
+
+.article>p {
+    color: red;
+    background-color: aquamarine;
+    font-size: 30px;
+}
+
+.div-dif {
+    width: 250px;
+    height: 250px;
+    background-color: salmon;
+    padding-top: 50px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    border: 10px double #14253D
+}
+
+.div-dif2 {
+    width: 250px;
+    height: 250px;
+    background-color: salmon;
+    border-radius: 125px;
+}
+
+.btn-filled {
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 20px 40px;
+    border: 10px solid blue;
+}
+
+.btn-outline {
+    text-decoration: none;
+    background-color: white;
+    color: blue;
+    padding: 20px 40px;
+    border: 10px solid blue;
+}
+
+.box-1 {
+    width: 800px;
+    height: 400px;
+    padding: 50px;
+    border: 10px solid black;
+    background: plum;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.box-2 {
+    width: 800px;
+    height: 400px;
+    padding: 50px;
+    border: 10px solid black;
+    background: plum;
+    box-sizing: border-box;
+    margin: 20px;
+}
+
+.inline-element {
+    background-color: lightgreen;
+    height: 20px;
+    width: 20px;
+    padding: 20px 20px;
+    border: 20px solid red;
+    margin: 20px 20px;
+    display: inline-block;
+}
