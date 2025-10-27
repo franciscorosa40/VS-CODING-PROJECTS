@@ -153,12 +153,12 @@ li {
 }
 
 .log-in {
+    display: inline-block;
     color: white;
     letter-spacing: 1px;
-    text-align: right;
-    padding-top: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
+    line-height: 25px;
+    text-align: center;
+    padding: 15px;
     background-color: #461368;
     border: 2px rgba(255, 208, 0, 0.747) solid;
     border-radius: 25px;
@@ -235,15 +235,14 @@ li {
 }
 
 .contact-us-form {
+    display: inline-block;
     color: white;
     letter-spacing: 1px;
+    line-height: 25px;
     border: rgba(255, 208, 0, 0.747);
     border-width: 5px;
     border-style: solid;
     background-color: #461368;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 40px;
+    padding: 40px;
     border-radius: 50px;
 }

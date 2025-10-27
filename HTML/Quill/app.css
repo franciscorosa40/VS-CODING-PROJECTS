@@ -53,7 +53,7 @@ Black: 000000
 
 /*--------------GLOBAL STYLES------------ */
 
-*{
+* {
     box-sizing: border-box;
 }
 
@@ -64,8 +64,12 @@ body {
     color: #495057;
 }
 
-h1, h2, h3, h4, h5 {
-    font-weight:700;
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 700;
     line-height: 1.2;
     letter-spacing: -2px;
     color: #212529;
@@ -98,10 +102,15 @@ p {
 a {
     font-size: 16px;
     text-decoration: none;
+    display: inline-block;
 }
 
 ul {
     list-style: none;
+}
+
+span {
+    display: inline-block;
 }
 
 .small-text {
@@ -117,36 +126,43 @@ ul {
     border-radius: 8px;
 }
 
-.btn-primary:link, .btn-primary:visited {
+.btn-primary:link,
+.btn-primary:visited {
     color: white;
     background-color: #339af0;
-    border: 2px solid  #339af0;
+    border: 2px solid #339af0;
 }
 
-.btn-primary:hover, .btn-primary:active {
+.btn-primary:hover,
+.btn-primary:active {
     color: white;
-    background-color:#1c7ed6;
+    background-color: #1c7ed6;
     border: 2px solid #1c7ed6;
 }
 
-.btn-primary-outline:link, .btn-primary_outline:visited {
+.btn-primary-outline:link,
+.btn-primary_outline:visited {
     color: #339af0;
-    background-color:white;
-    border: 2px solid  #339af0;
+    background-color: white;
+    border: 2px solid #339af0;
 }
 
-.btn-primary-outline:hover, .btn-primary_outline:active {
+.btn-primary-outline:hover,
+.btn-primary_outline:active {
     color: #1c7ed6;
-    background-color:white;
+    background-color: white;
     border: 2px solid #1c7ed6;
 }
 
-.btn-secondary:link, .btn-secondary:visited {
+.btn-secondary:link,
+.btn-secondary:visited {
     color: white;
     background-color: #9775fa;
     border: 2px solid #9775fa;
 }
-.btn-secondary:hover, .btn-primary:active {
+
+.btn-secondary:hover,
+.btn-primary:active {
     color: white;
     background-color: #7048e8;
     border: 2px solid #7048e8;
@@ -162,7 +178,7 @@ ul {
     background-color: #339af0;
 }
 
-.highlight-secondary{
+.highlight-secondary {
     background-color: #9775fa;
 }
 
@@ -203,7 +219,7 @@ ul {
 
 /*------FEATURES SECTION-----*/
 
-.features-section{
+.features-section {
     margin-bottom: 300px;
 }
 
@@ -220,7 +236,7 @@ ul {
 
 .cta-section {
     margin-bottom: 300px;
-} 
+}
 
 .cta-card {
     text-align: center;
