@@ -42,8 +42,6 @@ h4,
 h5 {
     font-size: 40px;
     display: inline-block;
-    margin-right: 250px;
-    margin-left: 250px;
 }
 
 h2 {
@@ -153,6 +151,11 @@ h1::after {
 
 #three-kingdoms {
     color: purple;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 .article p {
