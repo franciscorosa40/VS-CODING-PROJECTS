@@ -8,7 +8,7 @@
     --accent-border: rgba(255, 208, 0, 0.747);
     --bg: rgb(235, 231, 227);
     --text: #212529;
-    --container-width: 1200px;
+    --container-width: 100%;
     --radius-pill: 50px;
     --radius-card: 10px;
 }
@@ -23,7 +23,6 @@
 
 body {
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
     text-align: center;
     color: var(--text);
     background-color: var(--bg);
@@ -47,7 +46,7 @@ h2 {
 h3 {
     font-size: 62px;
     text-transform: capitalize;
-    margin-bottom: -5px;
+    margin-bottom: 20px;
 }
 
 h4 {
@@ -55,6 +54,13 @@ h4 {
     font-size: 25px;
     letter-spacing: -1px;
     color: var(--dq-purple-2);
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
 }
 
 /* ---------Paragraphs & Anchors------------ */
@@ -104,6 +110,8 @@ li {
 .btn-primary,
 .btn-primary:link,
 .btn-primary:visited {
+    font-size: 20px;
+    letter-spacing: 2.5px;
     color: var(--accent-cyan);
     background-color: var(--dq-purple);
     border: 2px solid var(--accent-border);
@@ -121,12 +129,8 @@ li {
 
 /*--------------IDS & CLASSES------------ */
 
-/* Allow the layout to scale down on small viewports */
 .container {
     max-width: var(--container-width);
-    width: 100%;
-    padding: 0 5px;
-    /* small horizontal padding on narrow viewports */
     margin: 0 auto;
 }
 
@@ -151,6 +155,7 @@ li {
     letter-spacing: 1px;
     line-height: 25px;
     padding: 15px;
+    margin-top: 50px;
     margin-bottom: 50px;
     background-color: var(--dq-purple);
     border: 2px var(--accent-border) solid;
@@ -158,12 +163,9 @@ li {
 }
 
 .nav-bar {
-    font-size: 27px;
-    letter-spacing: 5px;
-    width: max-content;
-    padding-bottom: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    padding: 5px 20px;
     background-color: var(--dq-purple);
     color: var(--accent-cyan);
     border: 2px solid var(--accent-border);
