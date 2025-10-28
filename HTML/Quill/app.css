@@ -55,6 +55,8 @@ Black: 000000
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -62,6 +64,11 @@ body {
     font-weight: 400;
     line-height: 1.5;
     color: #495057;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
 }
 
 h1,
@@ -228,6 +235,10 @@ span {
     margin-bottom: 80px;
 }
 
+.feature-headings {
+    margin-bottom: 20px;
+}
+
 .feature-img {
     width: 400px;
 }
@@ -244,6 +255,11 @@ span {
     width: 1000px;
     padding: 100px 200px;
     border-radius: 20px;
+    margin: 0 auto;
+}
+
+.cta-heading {
+    margin-bottom: 30px;
 }
 
 /*------FOOTER SECTION-----*/
