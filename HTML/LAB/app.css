@@ -235,6 +235,18 @@ h1::after {
     display: inline-block;
 }
 
+.parent {
+    height: 250px;
+    width: 250px;
+    background-color: lightblue;
+    border-radius: 500px;
+}
+
+.child {
+    height: 50%;
+    width: 50%;
+    background-color: salmon;
+    border-radius: 500px;
 .tldr-dynasty {
     width: 1000px;
     max-height: 300px;
