@@ -53,6 +53,36 @@ Black: 000000
 
 /*--------------GLOBAL STYLES------------ */
 
+: :root {
+    /* FONT SIZE */
+    --text-sm: 12px;
+    --text-base: 16px;
+    --text-paragraph: 20px;
+    --text-h5: 24px;
+    --text-h4: 32px;
+    --text-h3: 40px;
+    --text-h2: 48px;
+    --text-h1: 62px;
+
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-bold: 700;
+
+    /* LINE HEIGHTS */
+    --line-height-tight: 1.2;
+    --light-height-normal: 1.5;
+
+    /* LETTER SPACING */
+    --letter-spacing-tight: -2px;
+
+    /* FONT FAMILY*/
+    --font-family: 'Poppins', sans-serif;
+
+    /* COLORS */
+    --primary-base: #339af0;
+
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -213,6 +243,7 @@ span {
 
 .header {
     height: 100vh;
+    min-height: 800px;
 }
 
 /*------NAVBAR-----*/
