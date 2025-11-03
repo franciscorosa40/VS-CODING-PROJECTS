@@ -247,6 +247,8 @@ h1::after {
     width: 50%;
     background-color: salmon;
     border-radius: 500px;
+}
+
 .tldr-dynasty {
     width: 1000px;
     max-height: 300px;
