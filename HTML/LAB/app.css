@@ -261,3 +261,7 @@ h1::after {
     min-height: 600px;
     background-color: salmon;
 }
+
+.zhao-yun {
+    width: calc(100%/3 - 50px);
+}
