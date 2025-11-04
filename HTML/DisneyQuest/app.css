@@ -2,11 +2,11 @@
 
 :root {
     --dq-purple: #461368;
-    --dq-purple-2: #511361;
-    --accent-cyan: rgb(0, 255, 200);
-    --accent-gold: gold;
-    --accent-border: rgba(255, 208, 0, 0.747);
-    --bg: rgb(235, 231, 227);
+    --dq-purple-alt: #511361;
+    --dq-cyan: #00FFC8;
+    --dq-gold: #FFD000;
+    --dq-gold-alt: #FFD700;
+    --bg: #EBE7E3;
     --text: #212529;
     --container-width: 100%;
     --radius-pill: 50px;
@@ -57,7 +57,7 @@ h4 {
     font-weight: 350;
     font-size: 2.5rem;
     letter-spacing: -0.1rem;
-    color: var(--dq-purple-2);
+    color: var(--dq-purple-alt);
 }
 
 nav {
@@ -77,11 +77,11 @@ p {
 a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: var(--accent-cyan);
+    color: var(--dq-cyan);
 }
 
 a:hover {
-    color: var(--accent-gold);
+    color: var(--dq-gold-alt);
 }
 
 a:active {
@@ -116,16 +116,16 @@ li {
 .btn-primary:visited {
     font-size: 2rem;
     letter-spacing: 0.25rem;
-    color: var(--accent-cyan);
+    color: var(--dq-cyan);
     background-color: var(--dq-purple);
-    border: 2px solid var(--accent-border);
+    border: 2px solid var(--dq-gold);
     border-radius: var(--radius-pill);
     max-width: 100%;
 }
 
 .btn-primary:hover {
-    color: var(--accent-gold);
-    background-color: var(--dq-purple-2);
+    color: var(--dq-gold-alt);
+    background-color: var(--dq-purple-alt);
 }
 
 .btn-primary:active {
@@ -151,6 +151,7 @@ li {
     font-size: 2rem;
     font-style: italic;
     letter-spacing: 0.3rem;
+    margin-top: -2rem;
     margin-bottom: 2rem;
 }
 
@@ -164,7 +165,7 @@ li {
     margin-top: 5rem;
     margin-bottom: 5rem;
     background-color: var(--dq-purple);
-    border: 2px var(--accent-border) solid;
+    border: 2px var(--dq-gold) solid;
     border-radius: 25px;
 }
 
@@ -173,8 +174,8 @@ li {
     letter-spacing: 0.25rem;
     padding: 0.5rem 2rem;
     background-color: var(--dq-purple);
-    color: var(--accent-cyan);
-    border: 2px solid var(--accent-border);
+    color: var(--dq-cyan);
+    border: 2px solid var(--dq-gold);
     border-radius: 15px;
 }
 
@@ -189,6 +190,10 @@ li {
     height: 1px;
     background-color: black;
     margin: 2rem 0;
+}
+
+.attraction-description {
+    display: flex;
 }
 
 .figures {
@@ -224,7 +229,7 @@ li {
     height: 150px;
     padding: 5rem;
     background-color: var(--dq-purple);
-    border: 2px solid var(--accent-border);
+    border: 2px solid var(--dq-gold);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -243,7 +248,7 @@ li {
     color: white;
     letter-spacing: 0.1rem;
     line-height: 2.5rem;
-    border: 5px solid var(--accent-border);
+    border: 5px solid var(--dq-gold);
     padding: 4rem;
     background-color: var(--dq-purple);
     border-radius: 50px;
