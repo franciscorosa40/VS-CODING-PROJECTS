@@ -265,3 +265,37 @@ h1::after {
 .zhao-yun {
     width: calc(100%/3 - 50px);
 }
+
+.flex-container {
+    width: 800px;
+    height: 800px;
+    background-color: lightgray;
+    display: flex;
+    color: white;
+    font-size: 30px;
+    flex-direction: column;
+}
+
+.flex-item-1 {
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+}
+
+.flex-item-2 {
+    width: 50px;
+    height: 300px;
+    background-color: purple;
+}
+
+.flex-item-3 {
+    width: 100px;
+    height: 150px;
+    background-color: red;
+}
+
+.flex-item-4 {
+    width: 150px;
+    height: 50px;
+    background-color: green;
+}

@@ -192,6 +192,10 @@ li {
     margin: 2rem 0;
 }
 
+.attraction-description {
+    display: flex;
+}
+
 .figures {
     margin-top: 2rem;
     margin-bottom: 2rem;
