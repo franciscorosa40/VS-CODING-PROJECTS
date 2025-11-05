@@ -8,7 +8,6 @@
     --dq-gold-alt: #FFD700;
     --bg: #EBE7E3;
     --text: #212529;
-    --container-width: 100%;
     --radius-pill: 50px;
     --radius-card: 10px;
 }
@@ -26,17 +25,17 @@ html {
 }
 
 body {
+    background-color: var(--bg);
+    color: var(--text);
     font-family: "Roboto", sans-serif;
     text-align: center;
-    color: var(--text);
-    background-color: var(--bg);
 }
 
 /* ------Headings------- */
 h1 {
-    font-size: 6.2rem;
-    text-transform: capitalize;
     margin-bottom: 2rem;
+    font-size: 6rem;
+    text-transform: capitalize;
 }
 
 nav {
@@ -48,15 +47,15 @@ nav {
 
 /* ---------Paragraphs & Anchors------------ */
 p {
+    font-size: 2.5rem;
     font-weight: 400;
-    font-size: 1.6rem;
     line-height: 1.5;
 }
 
 a {
+    color: var(--dq-cyan);
     font-size: 1.5rem;
     text-decoration: none;
-    color: var(--dq-cyan);
 }
 
 a:hover {
@@ -70,41 +69,39 @@ a:active {
 /* -----------Lists---------- */
 ul {
     display: flex;
-    list-style: none;
     justify-content: center;
+    list-style: none;
     padding: 0;
 }
 
 li {
-    margin: 0 1rem;
+    margin: 1rem;
 }
 
-/* Buttons */
+/* --------Buttons---------- */
 .btn {
-    text-decoration: none;
-    padding: 1.2rem 3rem;
     display: block;
-    margin-bottom: 1rem;
     width: max-content;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-}
-
-.btn-primary,
-.btn-primary:link,
-.btn-primary:visited {
-    font-size: 2rem;
-    letter-spacing: 0.25rem;
-    color: var(--dq-cyan);
-    background-color: var(--dq-purple);
+    margin-bottom: 1rem;
+    padding: 1.5rem 3rem;
     border: 2px solid var(--dq-gold);
     border-radius: var(--radius-pill);
-    max-width: 100%;
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: var(--dq-purple);
+    color: var(--dq-cyan);
 }
 
 .btn-primary:hover {
-    color: var(--dq-gold-alt);
     background-color: var(--dq-purple-alt);
+    color: var(--dq-gold-alt);
 }
 
 .btn-primary:active {
@@ -113,59 +110,75 @@ li {
 
 /*--------------CLASSES------------ */
 
+/*--------Universal Classes-----*/
+
 .container {
-    max-width: var(--container-width);
     width: 90%;
+    max-width: 100%;
     margin: 0 auto;
 }
 
 .DQ-logo {
-    margin-bottom: 2rem;
-    max-width: 100%;
     height: auto;
-}
-
-.walt-quote {
-    font-weight: 500;
-    font-size: 2rem;
-    font-style: italic;
-    letter-spacing: 0.3rem;
-    margin-top: -2rem;
-    margin-bottom: 2rem;
-}
-
-.nav-bar {
-    font-size: 2rem;
-    letter-spacing: 0.25rem;
-    padding: 0.5rem 2rem;
-    background-color: var(--dq-purple);
-    color: var(--dq-cyan);
-    border: 2px solid var(--dq-gold);
-    border-radius: 15px;
-}
-
-.homepage-h2s {
-    font-size: 3.5rem;
-    text-transform: capitalize;
-    letter-spacing: 0.25rem;
-    color: white;
-    background-color: var(--dq-purple);
-    border: 2px solid var(--dq-purple);
-    border-radius: var(--radius-card);
-    padding: 1.5rem;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 100%;
-    margin-top: 5rem;
     margin-bottom: 2rem;
 }
 
 .divider {
+    margin: 2rem 0;
     border: 0;
     height: 1px;
     background-color: black;
-    margin: 2rem 0;
+}
+
+.social-icons {
+    width: 2rem;
+    height: 2rem;
+}
+
+.thank-you-text {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/*------Index Exclusive Classes-----*/
+
+.walt-quote {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.3rem;
+}
+
+.homepage-h2s {
+    width: max-content;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border: 2px solid var(--dq-purple);
+    border-radius: var(--radius-card);
+    background-color: var(--dq-purple);
+    color: white;
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    letter-spacing: 0.25rem;
+}
+
+/*------Attraction Pages Classes-----*/
+
+.nav-bar {
+    padding: 0.5rem 2rem;
+    border: 2px solid var(--dq-gold);
+    border-radius: 15px;
+    background-color: var(--dq-purple);
+    color: var(--dq-cyan);
+    font-size: 2rem;
+    letter-spacing: 0.25rem;
 }
 
 .attraction-info {
@@ -177,52 +190,44 @@ li {
     margin-bottom: 2rem;
 }
 
-.social-icons {
-    width: 20px;
-    height: 20px;
-}
-
-.small-text {
+.figure-captions {
     font-size: 1.5rem;
-    font-style: italic;
-}
-
-.thumbnail-captions {
     font-weight: 800;
-    font-size: 1.5rem;
     letter-spacing: 0.2rem;
 }
 
 .paragraph-links {
+    font-size: 2.5rem;
     color: var(--dq-purple);
 }
 
 .fun-meter {
-    font-size: 2.5rem;
-    color: white;
-    letter-spacing: 0.15rem;
-    width: 15px;
-    height: 15px;
-    padding: 10rem;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: var(--dq-purple);
-    border: 2px solid var(--dq-gold);
-    border-radius: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+    margin: 0 auto;
+    padding: 0;
+    border: 2px solid var(--dq-gold);
+    border-radius: 50%;
+    background-color: var(--dq-purple);
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 0.15rem;
     text-align: center;
 }
 
+/*------Contact Us Exclusive Classes----*/
+
 .contact-us-form {
     display: inline-block;
-    color: white;
-    letter-spacing: 0.1rem;
-    line-height: 2.5rem;
     border: 5px solid var(--dq-gold);
-    padding: 4rem;
+    border-radius: var(--radius-pill);
     background-color: var(--dq-purple);
-    border-radius: 50px;
+    color: white;
+    padding: 4rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
 }
