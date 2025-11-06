@@ -31,11 +31,26 @@ body {
     text-align: center;
 }
 
+article {
+    background-image: url('https://www.textures4photoshop.com/tex/thumbs/seamless-notebook-paper-texture-free-thumb36.jpg');
+    width: 65rem;
+    border: #212529;
+    border-style: double;
+    border-width: 10px;
+    border-color: var(--dq-purple);
+    padding: 5rem;
+}
+
 /* ------Headings------- */
 h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 5rem;
     font-size: 6rem;
     text-transform: capitalize;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
 }
 
 nav {
@@ -171,6 +186,16 @@ li {
 
 /*------Attraction Pages Classes-----*/
 
+/* (In case we want an img bg)
+.attractions-bg {
+    background-image: url('https://disneyinsights.com/wp-content/uploads/2017/07/Carpet-1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+*/
+
 .nav-bar {
     padding: 0.5rem 2rem;
     border: 2px solid var(--dq-gold);
@@ -181,9 +206,10 @@ li {
     letter-spacing: 0.25rem;
 }
 
-.attraction-info {
+.attraction-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-bottom: 5rem;
 }
 
 .figures {
@@ -209,8 +235,7 @@ li {
     align-items: center;
     width: 20rem;
     height: 20rem;
-    margin: 0 auto;
-    padding: 0;
+    margin: 5rem auto 0;
     border: 2px solid var(--dq-gold);
     border-radius: 50%;
     background-color: var(--dq-purple);
