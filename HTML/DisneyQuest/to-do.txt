@@ -1,0 +1,11 @@
+To Do List:
+
+1) Remove surplus <p>s in articles.
+
+2) Add "Back to Top" button at bottom of pages.
+
+3) Add log-in box to top of pages with Flexbox.
+
+4) Adjust nav bar to be a "list" with Flexbox.
+
+5) Fix attraction images that are breaking pages.
