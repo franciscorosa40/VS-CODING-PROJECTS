@@ -146,6 +146,20 @@ li {
     background-color: black;
 }
 
+.glove-up {
+    width: 4.5rem;
+    margin-right: 1rem;
+}
+
+.go-up {
+    width: 12rem;
+    padding-bottom: 1rem;
+}
+
+.go-up-back-divs {
+    margin-bottom: 1.5rem;
+}
+
 .social-icons {
     width: 2rem;
     height: 2rem;
@@ -221,6 +235,7 @@ li {
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: 0.2rem;
+    margin-top: 1.5rem;
 }
 
 .paragraph-links {
@@ -243,6 +258,16 @@ li {
     font-size: 2.5rem;
     letter-spacing: 0.15rem;
     text-align: center;
+}
+
+.glove-back {
+    width: 5rem;
+    margin-right: 1rem;
+}
+
+.go-back {
+    width: 15rem;
+    padding-bottom: .5rem;
 }
 
 /*------Contact Us Exclusive Classes----*/
