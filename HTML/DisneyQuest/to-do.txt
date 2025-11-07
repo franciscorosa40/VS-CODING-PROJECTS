@@ -9,3 +9,5 @@ To Do List:
 6) Add call to action on each attraction bio to submit their media via CU.
 
 7) Add comments section to each attraction.
+
+8) Finish figures!
