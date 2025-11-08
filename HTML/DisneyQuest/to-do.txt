@@ -10,50 +10,8 @@ To Do List:
 
 - Fix height of attraction info on some pages too long.
 
-The HTML and CSS files look good together; the styles are applied correctly according to the HTML structure you provided. The CSS you wrote effectively centers content, applies a consistent theme, and handles basic layout.
-Here are several improvements you can make to your HTML and CSS for better structure, accessibility, and modern best practices:
-HTML Improvements
-1. Semantic Structure (Headings)
-You are using <h1> tags inside your <h2> classes. HTML headings should follow a logical, hierarchical order (h1 then h2 then h3, etc.).
-Change: Replace the <h1> tags within your <section> elements with <h2>. Your main page title (if one existed in your header) would be the h1.
-html
-<!-- OLD -->
-<h2 class="homepage-h2s">List of Attractions Closed Alongside Disney Quest</h1>
-
-<!-- NEW -->
-<h2 class="homepage-h2s">List of Attractions Closed Alongside Disney Quest</h2>
-<!-- Make sure both instances of this are corrected -->
-Use code with caution.
-
 2. Accessibility & Best Practices
 HTML Validation:
-The width and height attributes on your <img> tags (.DQ-logo, the a link image) are not standard HTML5 attributes for responsiveness when using CSS for sizing. It's better practice to manage dimensions solely in CSS, but keeping them helps with page loading efficiency.
 The width="296" on the "Contact Us" image should ideally be removed if CSS controls the width, or added as width and height attributes (though they will be overwritten by CSS).
-Link Alt Text: The anchor tag wrapping the "Go UP" button has alt="Go back to the home page." in the image. This alt text is slightly confusing: the image is titled "GO UP" and links to #top, suggesting it goes to the top of the current page, not the home page.
-Improvement: Change the alt text to something more accurate:
-html
-<img class="glove-up" src="glove-up.jpg" alt="Return to top of page icon.">
-Use code with caution.
 
 Image Sizing: The width attributes on the logo images are helpful, but the aspect ratios in your HTML attributes (width="720" height="278.5") use a decimal height, which isn't valid for HTML attributes. The browser will likely ignore the decimal part, but it's cleaner to use integers.
-3. Redundant Dividers
-You have a lot of div elements solely used for styling (specifically the .divider class). This works fine, but in modern CSS layouts, we try to achieve spacing using margin or gap on container elements (<footer>, <section>) rather than relying on empty structural divs.
-Consideration: You could remove most of the .divider divs and add margin/padding to the adjacent <section> or <footer> elements instead.
-CSS Improvements
-1. Missing CSS Class
-You have an anchor tag with the class back-to-top in your footer, but there is no corresponding CSS rule for this class in the stylesheet you provided.
-Action: Add the .back-to-top selector to your CSS file if you intend to style that specific link differently.
-css
-/* Add this to your CSS file, perhaps in the Image & Logo Specific Classes section */
-.back-to-top {
-  /* add styles here if needed */
-}
-Use code with caution.
-
-2. Specificity and Organization
-While you requested the original order be maintained, the provided HTML highlights a slight confusion in naming conventions:
-The .go-up image is placed inside a go-up-back-divs div.
-The .glove-up image is inside that same div.
-The naming is functional, but slightly confusing to read (glove-up.jpg versus .go-up class versus go-up.png image). Ensure you are happy with these class names for long-term maintenance.
-Summary
-The site functions well with the given code. The primary required change is fixing the heading hierarchy in your HTML (<h1> should be <h2> in those sections). The rest of the suggestions focus on minor accessibility improvements and cleaner code structure.
