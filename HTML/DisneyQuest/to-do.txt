@@ -8,8 +8,6 @@ To Do List:
 
 - Add comments section to each attraction.
 
-- Fix height of attraction info on some pages too long.
-
 2. Accessibility & Best Practices
 HTML Validation:
 The width="296" on the "Contact Us" image should ideally be removed if CSS controls the width, or added as width and height attributes (though they will be overwritten by CSS).

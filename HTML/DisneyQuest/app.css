@@ -235,19 +235,23 @@ li {
 .attraction-container {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     margin-bottom: 5rem;
 }
 
 .figures {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 .figure-captions {
-    margin-top: 1.5rem;
+    padding: 2.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    border: var(--dq-purple) solid 2px;
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: 0.2rem;
+    background-image: url("https://www.textures4photoshop.com/tex/thumbs/seamless-notebook-paper-texture-free-thumb36.jpg");
 }
 
 .paragraph-links {
