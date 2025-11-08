@@ -1,11 +1,11 @@
 /* -----------TYPOGRAPHY & COLORS----------- */
-
 :root {
     --dq-purple: #461368;
     --dq-purple-alt: #511361;
     --dq-cyan: #00FFC8;
     --dq-gold: #FFD000;
     --dq-gold-alt: #FFD700;
+    --call-to-action: #d22d2d;
     --bg: #EBE7E3;
     --text: #212529;
     --radius-pill: 50px;
@@ -13,7 +13,6 @@
 }
 
 /*--------------GLOBAL STYLES------------ */
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -32,13 +31,16 @@ body {
 }
 
 article {
-    background-image: url('https://www.textures4photoshop.com/tex/thumbs/seamless-notebook-paper-texture-free-thumb36.jpg');
     width: 65rem;
-    border: #212529;
+    padding: 5rem;
     border-style: double;
     border-width: 10px;
     border-color: var(--dq-purple);
-    padding: 5rem;
+    background-image: url("https://www.textures4photoshop.com/tex/thumbs/seamless-notebook-paper-texture-free-thumb36.jpg");
+}
+
+label {
+    font-size: 2rem;
 }
 
 /* ------Headings------- */
@@ -49,10 +51,11 @@ h1 {
 }
 
 h2 {
-    font-size: 4rem;
     margin-bottom: 3rem;
+    font-size: 4rem;
 }
 
+/* -----------NAVIGATION----------- */
 nav {
     display: flex;
     flex-direction: column;
@@ -68,8 +71,6 @@ p {
 }
 
 a {
-    color: var(--dq-cyan);
-    font-size: 1.5rem;
     text-decoration: none;
 }
 
@@ -98,9 +99,7 @@ li {
     display: block;
     width: max-content;
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1rem;
+    margin: 0 auto 1rem;
     padding: 1.5rem 3rem;
     border: 2px solid var(--dq-gold);
     border-radius: var(--radius-pill);
@@ -126,7 +125,6 @@ li {
 /*--------------CLASSES------------ */
 
 /*--------Universal Classes-----*/
-
 .container {
     width: 90%;
     max-width: 100%;
@@ -134,15 +132,29 @@ li {
 }
 
 .DQ-logo {
-    height: auto;
+    width: 720px;
     max-width: 100%;
+    height: auto;
     margin-bottom: 2rem;
 }
 
+.log-in {
+    display: inline-block;
+    padding: 2rem;
+    border: 3px double var(--dq-gold);
+    border-radius: var(--radius-card);
+    background-color: var(--dq-purple);
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 3rem;
+    letter-spacing: 0.1rem;
+}
+
 .divider {
+    height: 1px;
     margin: 2rem 0;
     border: 0;
-    height: 1px;
     background-color: black;
 }
 
@@ -171,7 +183,6 @@ li {
 }
 
 /*------Index Exclusive Classes-----*/
-
 .walt-quote {
     margin-top: -2rem;
     margin-bottom: 2rem;
@@ -184,10 +195,7 @@ li {
 .homepage-h2s {
     width: max-content;
     max-width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 5rem;
-    margin-bottom: 2rem;
+    margin: 5rem auto 2rem;
     padding: 1.5rem;
     border: 2px solid var(--dq-purple);
     border-radius: var(--radius-card);
@@ -199,10 +207,9 @@ li {
 }
 
 /*------Attraction Pages Classes-----*/
-
-/* (In case we want an img bg)
+/*
 .attractions-bg {
-    background-image: url('https://disneyinsights.com/wp-content/uploads/2017/07/Carpet-1.jpg');
+    background-image: url("https://disneyinsights.com/wp-content/uploads/2017/07/Carpet-1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -220,6 +227,11 @@ li {
     letter-spacing: 0.25rem;
 }
 
+.nav-bar-links {
+    color: var(--dq-cyan);
+    font-size: 1.5rem;
+}
+
 .attraction-container {
     display: flex;
     justify-content: space-around;
@@ -232,15 +244,15 @@ li {
 }
 
 .figure-captions {
+    margin-top: 1.5rem;
     font-size: 1.5rem;
     font-weight: 800;
     letter-spacing: 0.2rem;
-    margin-top: 1.5rem;
 }
 
 .paragraph-links {
-    font-size: 2.5rem;
     color: var(--dq-purple);
+    font-size: 2.5rem;
 }
 
 .fun-meter {
@@ -260,6 +272,17 @@ li {
     text-align: center;
 }
 
+.call-to-action {
+    justify-content: center;
+    width: 30rem;
+    height: 20rem;
+    margin-top: 5rem;
+    margin-left: 3rem;
+    color: var(--call-to-action);
+    font-size: 2rem;
+    font-weight: 1000;
+}
+
 .glove-back {
     width: 5rem;
     margin-right: 1rem;
@@ -267,18 +290,18 @@ li {
 
 .go-back {
     width: 15rem;
-    padding-bottom: .5rem;
+    padding-bottom: 0.5rem;
 }
 
 /*------Contact Us Exclusive Classes----*/
-
 .contact-us-form {
     display: inline-block;
+    margin: 5rem auto;
+    padding: 4rem;
     border: 5px solid var(--dq-gold);
     border-radius: var(--radius-pill);
     background-color: var(--dq-purple);
     color: white;
-    padding: 4rem;
     line-height: 2.5rem;
     letter-spacing: 0.1rem;
 }
