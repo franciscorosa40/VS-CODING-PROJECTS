@@ -95,7 +95,7 @@ Black: 000000
     --black: #000000;
 
     /*MISCELLANEOUS*/
-    --nav-height: 300px;
+    --nav-height: 100px;
 }
 
 * {
@@ -265,6 +265,11 @@ span {
     align-items: center;
 }
 
+.nav-btn-container {
+    display: flex;
+    gap: 2rem;
+}
+
 /*------HERO SECTION-----*/
 
 .hero-section {
@@ -327,6 +332,17 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
+}
+
+.social-icons-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links-container {
+    display: flex;
+    gap: 1rem;
 }
 
 .social-icons {

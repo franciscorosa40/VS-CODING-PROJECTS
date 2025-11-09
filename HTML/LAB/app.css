@@ -23,6 +23,12 @@ Grey
 
 */
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-weight: 700;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -280,8 +286,12 @@ h1::after {
 
 .flex-item-1 {
     width: 200px;
-    height: 100px;
     background-color: blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1px;
 }
 
 .flex-item-2 {
@@ -300,4 +310,9 @@ h1::after {
     width: 150px;
     height: 50px;
     background-color: green;
+}
+
+.zhao-row {
+    display: flex;
+    gap: 5px;
 }
