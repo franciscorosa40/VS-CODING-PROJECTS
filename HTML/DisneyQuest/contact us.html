@@ -15,104 +15,98 @@
     <title>Disney Quest - Contact Us</title>
 </head>
 
-<body id="top">
+<body id="top" class="homepage-main">
     <div class="container">
-        <header>
-            <h1><a href="index.html"><img width="720" height="278.5" src="DQ Logo.webp" alt=" Disney Quest logo."></a>
-            </h1>
-            <p class="walt-quote">"Times and conditions change so rapidly that we must keep our aim constantly focused
-                on
-                the future."
-            <div class="walt-quote" style="margin-top: -20px;">- Walt Disney</div>
-            </p>
-        </header>
+        <header class="header-container">
+            <a href="index.html"><img class="DQ-logo" src="DQ Logo.webp" alt="Disney Quest logo."></a>
+    </div>
+    </header>
 
-        <div class="divider"></div>
-        <div class="divider"></div>
+    <div class="divider"></div>
+    <div class="divider"></div>
 
-        <main>
+    <main>
 
-            <form class="contact-us-form" action="/api/vi/journals" method="post">
+        <form class="contact-us-form" action="/api/vi/journals" method="post">
 
-                <label for="attraction"> Which attraction is your submission for?</label>
-                <div><select placeid="attraction" name="originates-from" required>
-                        <option value="General Diseny Quest">General Diseny Quest</option>
-                        <option value="Aladdin's Magic Carpet Ride">Aladdin's Magic Carpet Ride</option>
-                        <option value="Animation Academy">Animation Academy</option>
-                        <option value="Buzz Lightyear's AstroBlaster">Buzz Lightyear's AstroBlaster</option>
-                        <option value="CyberSpace Mountain">CyberSpace Mountain</option>
-                        <option value="Invasion! An ExtraTERRORestrial Alien Encounter">Invasion! An ExtraTERRORestrial
-                            Alien Encounter</option>
-                        <option value="Living Easels">Living Easels</option>
-                        <option value="Mighty Ducks Pinball Slam">Mighty Ducks Pinball Slam</option>
-                        <option value="Pirates of the Caribbean: Battle for Buccaneer Gold">Pirates of the Caribbean:
-                            Battle
-                            for Buccaneer Gold</option>
-                        <option value="Radio Disney Song Maker">Radio Disney Song Maker</option>
-                        <option value="Sid's Create-a-Toy">Sid's Create-a-Toy</option>
-                        <option value="Virtual Jungle Cruise">Virtual Jungle Cruise</option>
-                        <option value="Cave of Wonders Slide">Cave of Wonders Slide</option>
-                        <option value="Hercules in the Underworld">Hercules in the Underworld</option>
-                        <option value="Magic Mirrors">Magic Mirrors</option>
-                        <option value="Ride the Comix">Ride the Comix</option>
-                        <option value="Treasure of the Incas">Treasure of the Incas</option>
-                        <option value="Virtual Pirates of the Caribbean">Virtual Pirates of the Caribbean</option>
-                    </select></div>
+            <label for="attraction"> Which attraction is your submission for?</label>
+            <div><select placeid="attraction" name="originates-from" required>
+                    <option value="General Diseny Quest">General Diseny Quest</option>
+                    <option value="Aladdin's Magic Carpet Ride">Aladdin's Magic Carpet Ride</option>
+                    <option value="Animation Academy">Animation Academy</option>
+                    <option value="Buzz Lightyear's AstroBlaster">Buzz Lightyear's AstroBlaster</option>
+                    <option value="CyberSpace Mountain">CyberSpace Mountain</option>
+                    <option value="Invasion! An ExtraTERRORestrial Alien Encounter">Invasion! An ExtraTERRORestrial
+                        Alien Encounter</option>
+                    <option value="Living Easels">Living Easels</option>
+                    <option value="Mighty Ducks Pinball Slam">Mighty Ducks Pinball Slam</option>
+                    <option value="Pirates of the Caribbean: Battle for Buccaneer Gold">Pirates of the Caribbean:
+                        Battle
+                        for Buccaneer Gold</option>
+                    <option value="Radio Disney Song Maker">Radio Disney Song Maker</option>
+                    <option value="Sid's Create-a-Toy">Sid's Create-a-Toy</option>
+                    <option value="Virtual Jungle Cruise">Virtual Jungle Cruise</option>
+                    <option value="Cave of Wonders Slide">Cave of Wonders Slide</option>
+                    <option value="Hercules in the Underworld">Hercules in the Underworld</option>
+                    <option value="Magic Mirrors">Magic Mirrors</option>
+                    <option value="Ride the Comix">Ride the Comix</option>
+                    <option value="Treasure of the Incas">Treasure of the Incas</option>
+                    <option value="Virtual Pirates of the Caribbean">Virtual Pirates of the Caribbean</option>
+                </select></div>
 
-                <br>
+            <br>
 
-                <div><label for="submission-title">Subject</label></div>
-                <input id="submission-title" type="text" name="sent-media-subject" placeholder="Short Description"
-                    required>
+            <div><label for="submission-title">Subject</label></div>
+            <input id="submission-title" type="text" name="sent-media-subject" placeholder="Short Description" required>
 
-                <br>
-                <br>
+            <br>
+            <br>
 
-                <label for="submission-details">Detailed Information on What You Are
-                    Submitting</label>
-                <div><textarea id="submission-details" name="sent-media-details" placeholder="Detailed Description"
-                        cols="75" rows="20" minlength="5" required>
+            <label for="submission-details">Detailed Information on What You Are
+                Submitting</label>
+            <div><textarea id="submission-details" name="sent-media-details" placeholder="Detailed Description"
+                    cols="75" rows="20" minlength="5" required>
             </textarea></div>
 
-                <br>
+            <br>
 
-                <div><input type="file" /></div>
-                <button type="submit">Submit</button>
-            </form>
+            <div><input type="file" /></div>
+            <button type="submit">Submit</button>
+        </form>
 
-        </main>
+    </main>
 
-        <footer>
+    <footer>
 
-            <p>
-                <a href="index.html"> <img width="60.75" height="51.75" src="glove-back.jpg"
-                        alt="Go back to the home page."></a>
-                <img width="195" height="33.5" src="GO BACK.png" alt="Return to previous page.">
+        <p>
+            <a href="index.html"> <img width="60.75" height="51.75" src="glove-back.jpg"
+                    alt="Go back to the home page."></a>
+            <img width="195" height="33.5" src="GO BACK.png" alt="Return to previous page.">
 
-            <div class="divider"></div>
-            <div class="divider"></div>
+        <div class="divider"></div>
+        <div class="divider"></div>
 
-            <nav>
-                <ul>
-                    <li><a href="https://www.instagram.com/" target="_blank"><img class="social-icons"
-                                src="images/instagram.svg" alt="instagram logo"></a></li>
-                    <li><a href="https://www.facebook.com/" target="_blank"><img class="social-icons"
-                                src="images/facebook.svg" alt="facebook logo"></a></li>
-                    <li><a href="https://www.tiktok.com/" target="_blank"><img class="social-icons"
-                                src="images/tiktok.svg" alt="tiktok logo"></a></li>
-                    <li><a href="https://www.linkedin.com/" target="_blank"><img class="social-icons"
-                                src="images/linkedin.svg" alt="linkedin logo"></a></li>
-                    <li><a href="https://www.youtube.com/" target="_blank"><img class="social-icons"
-                                src="images/youtube.svg" alt="youtube logo"></a></li>
-                </ul>
-            </nav>
+        <nav>
+            <ul>
+                <li><a href="https://www.instagram.com/" target="_blank"><img class="social-icons"
+                            src="images/instagram.svg" alt="instagram logo"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img class="social-icons"
+                            src="images/facebook.svg" alt="facebook logo"></a></li>
+                <li><a href="https://www.tiktok.com/" target="_blank"><img class="social-icons" src="images/tiktok.svg"
+                            alt="tiktok logo"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><img class="social-icons"
+                            src="images/linkedin.svg" alt="linkedin logo"></a></li>
+                <li><a href="https://www.youtube.com/" target="_blank"><img class="social-icons"
+                            src="images/youtube.svg" alt="youtube logo"></a></li>
+            </ul>
+        </nav>
 
-            <div>
-                <p class="thank-you-text">Made by Francisco Rosa</p>
-            </div>
-            </p>
+        <div>
+            <p class="thank-you-text">Made by Francisco Rosa</p>
+        </div>
+        </p>
 
-        </footer>
+    </footer>
     </div>
 </body>
 
