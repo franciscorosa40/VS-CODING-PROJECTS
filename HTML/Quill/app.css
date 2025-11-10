@@ -95,7 +95,7 @@ Black: 000000
     --black: #000000;
 
     /*MISCELLANEOUS*/
-    --nav-height: 300px;
+    --nav-height: 100px;
 }
 
 * {
@@ -261,6 +261,13 @@ span {
 .navbar {
     height: var(--nav-height);
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-btn-container {
+    display: flex;
+    gap: 2rem;
 }
 
 /*------HERO SECTION-----*/
@@ -268,8 +275,11 @@ span {
 .hero-section {
     height: calc(100vh - var(--nav-height));
     min-height: 400px;
-    text-align: center;
     margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-heading {
@@ -278,6 +288,11 @@ span {
 
 .hero-paragraph {
     margin-bottom: 5rem;
+}
+
+.hero-btn-container {
+    display: flex;
+    gap: 2rem;
 }
 
 /*------FEATURES SECTION-----*/
@@ -304,15 +319,17 @@ span {
 
 .cta-section {
     margin-bottom: 30rem;
+    display: flex;
+    justify-content: center;
 }
 
 .cta-card {
     text-align: center;
     background-color: var(--primary-base);
     max-width: 1000px;
+    width: 100%;
     padding: 10rem 20rem;
     border-radius: 20px;
-    margin: 0 auto;
 }
 
 .cta-heading {
@@ -324,6 +341,18 @@ span {
 .footer-section {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icons-container {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer-links-container {
+    display: flex;
+    gap: 1rem;
 }
 
 .social-icons {

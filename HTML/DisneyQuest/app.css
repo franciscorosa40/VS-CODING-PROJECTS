@@ -1,4 +1,4 @@
-/* -----------TYPOGRAPHY & COLORS----------- */
+/* -----------TYPOGRAPHY & COLORS / VARIABLES----------- */
 :root {
     --dq-purple: #461368;
     --dq-purple-alt: #511361;
@@ -8,11 +8,20 @@
     --call-to-action: #d22d2d;
     --bg: #EBE7E3;
     --text: #212529;
-    --radius-pill: 50px;
-    --radius-card: 10px;
+    --white-color: white;
+    --x-small-font: 1.5rem;
+    --small-font: 2rem;
+    --medium-font: 2.5rem;
+    --large-font: 3.5rem;
+    --x-large-font: 4rem;
+    --xx-large-font: 6rem;
+    --radius-pill: 5rem;
+    --radius-card: 1rem;
+    --container-gaps: 7.5rem;
+    --notebook-bg: url("https://www.textures4photoshop.com/tex/thumbs/seamless-notebook-paper-texture-free-thumb36.jpg");
 }
 
-/*--------------GLOBAL STYLES------------ */
+/*--------------GLOBAL RESET & BASE STYLES------------ */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -30,59 +39,43 @@ body {
     text-align: center;
 }
 
-article {
-    width: 65rem;
-    padding: 5rem;
-    border-style: double;
-    border-width: 10px;
-    border-color: var(--dq-purple);
-    background-image: url("https://www.textures4photoshop.com/tex/thumbs/seamless-notebook-paper-texture-free-thumb36.jpg");
-}
-
-label {
-    font-size: 2rem;
-}
-
-/* ------Headings------- */
+/* ------Typography (Headings, Paragraphs, Labels)------- */
 h1 {
-    margin-bottom: 5rem;
-    font-size: 6rem;
+    font-size: var(--xx-large-font);
     text-transform: capitalize;
 }
 
 h2 {
     margin-bottom: 3rem;
-    font-size: 4rem;
+    font-size: var(--large-font);
 }
 
-/* -----------NAVIGATION----------- */
-nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1px;
-}
-
-/* ---------Paragraphs & Anchors------------ */
 p {
-    font-size: 2.5rem;
+    font-size: var(--medium-font);
     font-weight: 400;
     line-height: 1.5;
 }
 
+label {
+    font-size: var(--small-font);
+}
+
+/* ---------Anchors & Lists------------ */
 a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover,
+a:focus {
     color: var(--dq-gold-alt);
+    cursor: pointer;
 }
 
 a:active {
-    color: white;
+    color: var(--white-color);
+    cursor: pointer;
 }
 
-/* -----------Lists---------- */
 ul {
     display: flex;
     justify-content: center;
@@ -103,7 +96,7 @@ li {
     padding: 1.5rem 3rem;
     border: 2px solid var(--dq-gold);
     border-radius: var(--radius-pill);
-    font-size: 2rem;
+    font-size: var(--small-font);
     letter-spacing: 0.25rem;
     text-decoration: none;
 }
@@ -119,43 +112,56 @@ li {
 }
 
 .btn-primary:active {
-    color: white;
+    color: var(--white-color);
 }
 
-/*--------------CLASSES------------ */
-
-/*--------Universal Classes-----*/
+/*--------------LAYOUT & UNIVERSAL CLASSES------------ */
 .container {
-    width: 90%;
     max-width: 100%;
     margin: 0 auto;
 }
 
-.DQ-logo {
-    width: 720px;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 2rem;
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.log-in {
-    display: inline-block;
-    padding: 2rem;
-    border: 3px double var(--dq-gold);
-    border-radius: var(--radius-card);
+/* -----------NAVIGATION----------- */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1px;
+    margin-bottom: 5rem;
+}
+
+.nav-bar {
+    padding: 0.5rem 2rem;
+    border: 2px solid var(--dq-gold);
+    border-radius: 1.5rem;
     background-color: var(--dq-purple);
-    color: white;
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 3rem;
-    letter-spacing: 0.1rem;
+    color: var(--dq-cyan);
+    font-size: var(--small-font);
+    letter-spacing: 0.25rem;
 }
 
-.divider {
-    height: 1px;
-    margin: 2rem 0;
-    border: 0;
-    background-color: black;
+.nav-bar-links {
+    color: var(--dq-cyan);
+    font-size: var(--x-small-font);
+}
+
+/* --------LOGOS & IMAGES-----*/
+.DQ-logo {
+    width: 72rem;
+    max-width: 100%;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+.social-icons {
+    width: 2rem;
+    height: 2rem;
 }
 
 .glove-up {
@@ -168,91 +174,139 @@ li {
     padding-bottom: 1rem;
 }
 
-.go-up-back-divs {
-    margin-bottom: 1.5rem;
+.glove-back {
+    width: 5rem;
+    margin-right: 1rem;
 }
 
-.social-icons {
-    width: 2rem;
-    height: 2rem;
+.go-back {
+    width: 15rem;
+    padding-bottom: 0.5rem;
+}
+
+/*--------------FOOTER------------ */
+.footer-container {
+    margin-top: 5rem;
+}
+
+.go-up-back-divs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .thank-you-text {
-    font-size: 1.5rem;
+    font-size: var(--x-small-font);
     font-style: italic;
 }
 
-/*------Index Exclusive Classes-----*/
+
+/*------Index Exclusive Styles-----*/
+
+.homepage-main {
+    background: url("https://www.disneytouristblog.com/wp-content/uploads/2015/08/disneyquest-disney-world-downtown-140.jpg") center center / cover no-repeat fixed;
+}
+
 .walt-quote {
-    margin-top: -2rem;
-    margin-bottom: 2rem;
-    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: -2rem 1rem 2rem 1rem;
+    padding: 2.5rem;
+    font-size: var(--small-font);
     font-weight: 500;
     font-style: italic;
     letter-spacing: 0.3rem;
+    background-color: var(--dq-purple);
+    color: var(--white-color);
+    max-width: fit-content;
+    border-radius: var(--radius-pill);
+    border: 1px solid var(--dq-gold);
 }
 
 .homepage-h2s {
     width: max-content;
     max-width: 100%;
-    margin: 5rem auto 2rem;
+    margin: 5rem auto;
     padding: 1.5rem;
-    border: 2px solid var(--dq-purple);
+    border: 2px solid var(--dq-gold);
     border-radius: var(--radius-card);
     background-color: var(--dq-purple);
-    color: white;
-    font-size: 3.5rem;
+    color: var(--white-color);
+    font-size: var(--large-font);
     text-transform: capitalize;
     letter-spacing: 0.25rem;
 }
 
-/*------Attraction Pages Classes-----*/
-/*
+/*------Attraction Pages Exclusive Styles-----*/
+
 .attractions-bg {
-    background-image: url("https://disneyinsights.com/wp-content/uploads/2017/07/Carpet-1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-attachment: fixed;
-}
-*/
-
-.nav-bar {
-    padding: 0.5rem 2rem;
-    border: 2px solid var(--dq-gold);
-    border-radius: 15px;
-    background-color: var(--dq-purple);
-    color: var(--dq-cyan);
-    font-size: 2rem;
-    letter-spacing: 0.25rem;
-}
-
-.nav-bar-links {
-    color: var(--dq-cyan);
-    font-size: 1.5rem;
+    background: url("https://disneyinsights.com/wp-content/uploads/2017/07/Carpet-1.jpg") center center / cover no-repeat fixed;
 }
 
 .attraction-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    margin-bottom: 5rem;
+    align-items: center;
+    margin-bottom: var(--container-gaps);
 }
 
+article {
+    width: 65rem;
+    padding: 3rem;
+    border: 1rem double var(--dq-purple);
+    background-image: var(--notebook-bg);
+}
+
+.attractions-h1 {
+    max-width: fit-content;
+    margin: auto;
+    margin-bottom: 5rem;
+    padding: 1rem 2rem;
+    background-image: var(--notebook-bg);
+    border: 1rem double var(--dq-purple);
+}
+
+.attraction-pics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 3rem;
+    margin-bottom: var(--container-gaps);
+}
+
+/* Figures & Captions */
 .figures {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 3rem;
 }
 
 .figure-captions {
-    margin-top: 1.5rem;
-    font-size: 1.5rem;
+    padding: 2.5rem 0.5rem;
+    border: var(--dq-purple) solid 2px;
+    font-size: var(--x-small-font);
     font-weight: 800;
     letter-spacing: 0.2rem;
+    background-image: var(--notebook-bg);
 }
 
+.social-figures-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: var(--container-gaps);
+}
+
+/* Interaction Elements (Fun Meter & Call to Action) */
 .paragraph-links {
     color: var(--dq-purple);
-    font-size: 2.5rem;
+    font-size: var(--medium-font);
 }
 
 .fun-meter {
@@ -266,32 +320,21 @@ li {
     border: 2px solid var(--dq-gold);
     border-radius: 50%;
     background-color: var(--dq-purple);
-    color: white;
-    font-size: 2.5rem;
+    color: var(--white-color);
+    font-size: var(--medium-font);
     letter-spacing: 0.15rem;
     text-align: center;
 }
 
 .call-to-action {
-    justify-content: center;
     width: 30rem;
     height: 20rem;
-    margin-top: 5rem;
-    margin-left: 3rem;
+    margin: 5rem 0 0 3rem;
     color: var(--call-to-action);
-    font-size: 2rem;
+    font-size: var(--small-font);
     font-weight: 1000;
 }
 
-.glove-back {
-    width: 5rem;
-    margin-right: 1rem;
-}
-
-.go-back {
-    width: 15rem;
-    padding-bottom: 0.5rem;
-}
 
 /*------Contact Us Exclusive Classes----*/
 .contact-us-form {
@@ -301,7 +344,25 @@ li {
     border: 5px solid var(--dq-gold);
     border-radius: var(--radius-pill);
     background-color: var(--dq-purple);
-    color: white;
+    color: var(--white-color);
     line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+}
+
+.contact-us {
+    width: 30rem;
+}
+
+/* Login Form (Commented out in HTML, organized here just in case) */
+.log-in {
+    display: inline-block;
+    padding: 2rem;
+    border: 3px double var(--dq-gold);
+    border-radius: var(--radius-card);
+    background-color: var(--dq-purple);
+    color: var(--white-color);
+    font-size: var(--x-small-font);
+    font-weight: 500;
+    line-height: 3rem;
     letter-spacing: 0.1rem;
 }

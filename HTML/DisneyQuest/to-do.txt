@@ -2,16 +2,10 @@ To Do List:
 
 - Add log-in box to top of pages with Flexbox.
 
-- Adjust nav bar to be a "list" with Flexbox.
-
 - Fix attraction images that are breaking pages.
 
 - Add comments section to each attraction.
 
-- Fix height of attraction info on some pages too long.
+Refactor repeating styles:
+The border styles and background image styles for .figure-captions, article, and .attractions-h1 are very similar. You could create a utility class (e.g., .notebook-card) and apply it to all three elements to reduce repetition.
 
-2. Accessibility & Best Practices
-HTML Validation:
-The width="296" on the "Contact Us" image should ideally be removed if CSS controls the width, or added as width and height attributes (though they will be overwritten by CSS).
-
-Image Sizing: The width attributes on the logo images are helpful, but the aspect ratios in your HTML attributes (width="720" height="278.5") use a decimal height, which isn't valid for HTML attributes. The browser will likely ignore the decimal part, but it's cleaner to use integers.
