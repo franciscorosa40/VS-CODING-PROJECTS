@@ -359,8 +359,15 @@ h1::after {
 .div-grid-container {
     font-size: 40px;
     display: grid;
-    grid-template-columns: 100px 200px;
-    grid-template-rows: 50px 100px 200px 300px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 2fr 3fr 4fr;
+    height: 1000px;
+    width: 400px;
+    row-gap: 20px;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+    background-color: #14253D;
 }
 
 .grid-item-1 {
@@ -373,10 +380,13 @@ h1::after {
 
 .grid-item-3 {
     background-color: yellow;
+    justify-self: start;
+    align-self: start;
 }
 
 .grid-item-4 {
     background-color: green;
+    grid-row: 1/2;
 }
 
 .grid-item-5 {
@@ -385,6 +395,7 @@ h1::after {
 
 .grid-item-6 {
     background-color: orange;
+    grid-column: 1/4;
 }
 
 .grid-item-7 {
