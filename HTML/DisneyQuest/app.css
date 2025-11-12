@@ -119,6 +119,7 @@ li {
 .container {
     max-width: 100%;
     margin: 0 auto;
+    width: 95%;
 }
 
 .header-container {
@@ -365,4 +366,22 @@ article {
     font-weight: 500;
     line-height: 3rem;
     letter-spacing: 0.1rem;
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 62.5rem) {
+    html {
+        font-size: 50%;
+    }
+
+    .attraction-pics-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 31.25rem) {
+    html {
+        font-size: 37.5%;
+    }
 }
