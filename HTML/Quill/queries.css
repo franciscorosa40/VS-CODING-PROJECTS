@@ -1,0 +1,26 @@
+/*LG - Small Laptops: 1024px - 1280px */
+
+@media (max-width: 72 rem) {
+    /* 1150px / 16px = 72rem */
+    /* 72rem x 16 px = 1152px */
+
+    html {
+        font-size: 56.25%;
+        /* 9px / 16px = 56.25% */
+    }
+
+    .features-grid-container {
+        column-gap: 3rem;
+    }
+
+    .cta-section {
+        margin-bottom: 25rem;
+    }
+}
+
+@media (max-width: 51rem) {
+
+    html {
+        font-size: : 50%;
+    }
+}

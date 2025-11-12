@@ -1,8 +1,6 @@
 To Do List:
 
-- Add log-in box to top of pages with Flexbox.
-
-- Fix attraction images that are breaking pages.
+- Add log-in box to top of pages.
 
 - Add comments section to each attraction.
 
