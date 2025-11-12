@@ -253,6 +253,7 @@ nav {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    margin-top: var(--container-gaps);
     margin-bottom: var(--container-gaps);
 }
 
@@ -273,17 +274,16 @@ article {
 }
 
 .attraction-pics-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 3rem;
+    justify-items: center;
+    align-items: center;
+    margin-top: var(--container-gaps);
     margin-bottom: var(--container-gaps);
 }
 
 /* Figures & Captions */
-.figures {
-    margin-top: 3rem;
-}
 
 .figure-captions {
     padding: 2.5rem 0.5rem;
