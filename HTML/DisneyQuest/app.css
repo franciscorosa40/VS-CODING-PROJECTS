@@ -76,17 +76,6 @@ a:active {
     cursor: pointer;
 }
 
-ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-}
-
-li {
-    margin: 1rem;
-}
-
 /* --------Buttons---------- */
 .btn {
     display: block;
@@ -129,27 +118,34 @@ li {
 }
 
 /* -----------NAVIGATION----------- */
-nav {
+
+.nav-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 1px;
     margin-bottom: 5rem;
 }
 
 .nav-bar {
-    padding: 0.5rem 2rem;
-    border: 2px solid var(--dq-gold);
-    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    list-style: none;
     background-color: var(--dq-purple);
-    color: var(--dq-cyan);
-    font-size: var(--small-font);
-    letter-spacing: 0.25rem;
+    border: 1.5px solid var(--dq-gold);
+    border-radius: var(--radius-pill);
+    padding: 1rem
 }
 
 .nav-bar-links {
+    padding: 1.5rem;
     color: var(--dq-cyan);
-    font-size: var(--x-small-font);
+    font-size: var(--small-font);
+    text-decoration: none;
 }
 
 /* --------LOGOS & IMAGES-----*/
@@ -274,6 +270,10 @@ article {
     border: 1rem double var(--dq-purple);
 }
 
+.youtube-thumbs {
+    margin-bottom: 2rem;
+}
+
 .attraction-pics-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -366,22 +366,4 @@ article {
     font-weight: 500;
     line-height: 3rem;
     letter-spacing: 0.1rem;
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width: 62.5rem) {
-    html {
-        font-size: 50%;
-    }
-
-    .attraction-pics-container {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 31.25rem) {
-    html {
-        font-size: 37.5%;
-    }
 }
