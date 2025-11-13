@@ -1,0 +1,28 @@
+/*LG - Small Laptops: 1024px - 1280px */
+
+@media (max-width: 80rem) {
+    html {
+        font-size: 56.25%;
+    }
+
+    .nav-bar-links {
+        font-size: 1rem;
+    }
+
+    .attraction-container {
+        gap: 2rem;
+    }
+
+    .attraction-pics-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+/*MD - Tablets: 768px - 1024px */
+
+@media (max-width: 31.25rem) {
+    html {
+        font-size: 37.5%;
+    }
+}
