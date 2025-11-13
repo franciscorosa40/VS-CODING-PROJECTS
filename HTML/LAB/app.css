@@ -405,3 +405,47 @@ h1::after {
 .grid-item-8 {
     background-color: grey;
 }
+
+.position-container {
+    height: 1000px;
+    width: 100%;
+    background-color: #14253D;
+    position: relative;
+}
+
+.relative1 {
+    height: 100px;
+    width: 100px;
+    background-color: antiquewhite;
+    position: relative;
+    top: 30px;
+    left: 40px;
+}
+
+.absolute1 {
+    height: 200px;
+    width: 200px;
+    background-color: chartreuse;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.fixed1 {
+    height: 100px;
+    width: 500px;
+    background-color: firebrick;
+    position: fixed;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    text-align: center;
+}
+
+.sticky1 {
+    height: 100px;
+    width: 500px;
+    background-color: mediumpurple;
+    position: sticky;
+    top: 0;
+}
