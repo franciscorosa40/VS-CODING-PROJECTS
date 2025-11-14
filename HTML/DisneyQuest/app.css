@@ -45,9 +45,13 @@ h1 {
     text-transform: capitalize;
 }
 
+h2,
+h3 {
+    font-size: var(--large-font);
+}
+
 h2 {
     margin-bottom: 3rem;
-    font-size: var(--large-font);
 }
 
 p {
