@@ -60,6 +60,10 @@ label {
     font-size: var(--small-font);
 }
 
+li {
+    list-style: none;
+}
+
 /* ---------Anchors & Lists------------ */
 a {
     text-decoration: none;
@@ -117,6 +121,27 @@ a:active {
     align-items: center;
 }
 
+.chat-container {
+    height: 10rem;
+    width: 10rem;
+    background-color: var(--dq-purple);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: 5px solid var(--dq-gold);
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+}
+
+.chat-icon {
+    height: 6.6rem;
+    width: 6.6rem;
+    color: var(--dq-cyan);
+    transform: scale(-1, 1);
+}
+
 /* -----------NAVIGATION----------- */
 
 .nav-container {
@@ -141,11 +166,17 @@ a:active {
     padding: 1rem
 }
 
-.nav-bar-links {
-    padding: 1.5rem;
+.nav-bar-links,
+.nav-bar-links-leftside {
+    padding: 1rem;
     color: var(--dq-cyan);
     font-size: var(--small-font);
     text-decoration: none;
+    border-left: 2px solid var(--dq-gold);
+}
+
+.nav-bar-links-leftside {
+    border: none;
 }
 
 /* --------LOGOS & IMAGES-----*/
@@ -194,6 +225,14 @@ a:active {
     gap: 1.5rem;
     margin-top: 5rem;
     margin-bottom: 5rem;
+}
+
+.social-icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1rem auto;
+    gap: 1rem;
 }
 
 .thank-you-text {
@@ -250,7 +289,6 @@ a:active {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    margin-top: var(--container-gaps);
     margin-bottom: var(--container-gaps);
 }
 
