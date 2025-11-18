@@ -203,6 +203,7 @@ span {
     color: var(--white);
     background-color: var(--primary-shade);
     border: 2px solid var(--primary-shade);
+    transform: scale(1.05, 1.05);
 }
 
 .btn-primary-outline:link,
@@ -217,6 +218,7 @@ span {
     color: var(--primary-shade);
     background-color: var(--white);
     border: 2px solid var(--primary-shade);
+    transform: scale(1.05, 1.05);
 }
 
 .btn-secondary:link,
@@ -231,6 +233,7 @@ span {
     color: var(--white);
     background-color: var(--secondary-shade);
     border: 2px solid var(--secondary-shade);
+    transform: scale(1.05, 1.05);
 }
 
 .highlight {
@@ -257,6 +260,23 @@ span {
 
 .log-sm {
     width: 80px;
+}
+
+.beta {
+    position: relative;
+}
+
+.beta::after {
+    content: 'beta';
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 1.2rem;
+    background-color: var(--tertiary-base);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    color: var(--white);
+    transform: translate(-70%, -70%);
 }
 
 /*--------------SECTIONS------------*/
