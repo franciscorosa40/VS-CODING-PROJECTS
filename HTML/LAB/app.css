@@ -272,6 +272,7 @@ h1::after {
 
 .zhao-yun {
     width: calc(100%/3 - 50px);
+    transition: 0.5s ease-in;
 }
 
 .zhao-yun:hover {
@@ -455,6 +456,6 @@ h1::after {
 }
 
 .shadow {
-    box-shadow: 5px 5px 10px gray;
+    box-shadow: 5px 5px 10px 5px gray;
     margin: 50px auto;
 }
