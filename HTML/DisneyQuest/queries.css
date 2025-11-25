@@ -1,12 +1,8 @@
 /*LG - Small Laptops: 1024px - 1280px */
 
-@media (max-width: 80rem) {
+@media (min-width: 1024px) and (max-width: 1280px) {
     html {
         font-size: 56.25%;
-    }
-
-    .nav-bar-links {
-        font-size: 1rem;
     }
 
     .attraction-container {
@@ -21,8 +17,14 @@
 
 /*MD - Tablets: 768px - 1024px */
 
-@media (max-width: 31.25rem) {
+@media (min-width:768px) and (max-width: 1024px) {
     html {
         font-size: 37.5%;
+    }
+
+    .nav-bar-links,
+    .nav-bar-links-leftside {
+        font-size: 2.5rem;
+        padding: 1px;
     }
 }
