@@ -1,4 +1,6 @@
-/* -----------TYPOGRAPHY & COLORS / VARIABLES----------- */
+/* ============================================
+   TYPOGRAPHY & COLORS / VARIABLES
+   ============================================ */
 :root {
     --dq-purple: #461368;
     --dq-purple-alt: #511361;
@@ -19,9 +21,13 @@
     --radius-card: 1rem;
     --container-gaps: 7.5rem;
     --notebook-bg: url("https://www.textures4photoshop.com/tex/thumbs/seamless-notebook-paper-texture-free-thumb36.jpg");
+    --shadow: 5px 5px 5px 1px black;
+    --expand: scale(1.5, 1.5);
 }
 
-/*--------------GLOBAL RESET & BASE STYLES------------ */
+/* ============================================
+   GLOBAL RESET & BASE STYLES
+   ============================================ */
 * {
     box-sizing: border-box;
     margin: 0;
@@ -34,13 +40,17 @@ html {
 }
 
 body {
+    margin: 0;
+    padding: 0;
     background-color: var(--bg);
-    color: var(--text);
     font-family: "Roboto", sans-serif;
     text-align: center;
+    color: var(--text);
 }
 
-/* ------Typography (Headings, Paragraphs, Labels)------- */
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
 h1 {
     font-size: var(--xx-large-font);
     text-transform: capitalize;
@@ -69,7 +79,9 @@ li {
     list-style: none;
 }
 
-/* ---------Anchors & Lists------------ */
+/* ============================================
+   ANCHORS
+   ============================================ */
 a {
     text-decoration: none;
 }
@@ -85,18 +97,29 @@ a:active {
     cursor: pointer;
 }
 
-/* --------Buttons---------- */
+/* ============================================
+   BUTTONS
+   ============================================ */
 .btn {
     display: block;
+
     width: max-content;
     max-width: 100%;
+
     margin: 0 auto 1rem;
     padding: 1.5rem 3rem;
+
     border: 2px solid var(--dq-gold);
     border-radius: var(--radius-pill);
+
+    background: none;
+
     font-size: var(--small-font);
     letter-spacing: 0.25rem;
     text-decoration: none;
+    color: inherit;
+
+    transition: 0.2s linear;
 }
 
 .btn-primary {
@@ -107,17 +130,22 @@ a:active {
 .btn-primary:hover {
     background-color: var(--dq-purple-alt);
     color: var(--dq-gold-alt);
+
+    box-shadow: var(--shadow);
+    transform: scale(1.1, 1.1);
 }
 
 .btn-primary:active {
     color: var(--white-color);
 }
 
-/*--------------LAYOUT & UNIVERSAL CLASSES------------ */
+/* ============================================
+   LAYOUT & UNIVERSAL CLASSES
+   ============================================ */
 .container {
+    width: 95%;
     max-width: 100%;
     margin: 0 auto;
-    width: 95%;
 }
 
 .header-container {
@@ -127,67 +155,82 @@ a:active {
 }
 
 .chat-container {
-    height: 10rem;
-    width: 10rem;
-    background-color: var(--dq-purple);
-    border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: 5px solid var(--dq-gold);
     position: fixed;
+
     bottom: 2rem;
     right: 2rem;
+
+    width: 10rem;
+    height: 10rem;
+
+    border-radius: 50%;
+    outline: 5px solid var(--dq-gold);
+    background-color: var(--dq-purple);
 }
 
 .chat-icon {
-    height: 6.6rem;
     width: 6.6rem;
-    color: var(--dq-cyan);
+    height: 6.6rem;
+
     transform: scale(-1, 1);
+    color: var(--dq-cyan);
 }
 
-/* -----------NAVIGATION----------- */
-
+/* ============================================
+   NAVIGATION
+   ============================================ */
 .nav-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     margin-bottom: 5rem;
 }
 
 .nav-bar {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+
     gap: 1rem;
-    list-style: none;
-    background-color: var(--dq-purple);
+    padding: 1rem;
+
     border: 1.5px solid var(--dq-gold);
     border-radius: var(--radius-pill);
-    padding: 1rem
+
+    background-color: var(--dq-purple);
+    list-style: none;
 }
 
 .nav-bar-links,
 .nav-bar-links-leftside {
     padding: 1rem;
-    color: var(--dq-cyan);
+
+    border-left: 2px solid var(--dq-gold);
+    background: none;
+
     font-size: var(--small-font);
     text-decoration: none;
-    border-left: 2px solid var(--dq-gold);
+    color: var(--dq-cyan);
 }
 
 .nav-bar-links-leftside {
     border: none;
 }
 
-/* --------LOGOS & IMAGES-----*/
+
+/* ============================================
+   LOGOS & IMAGES
+   ============================================ */
 .DQ-logo {
     width: 72rem;
     max-width: 100%;
+
     margin-top: 5rem;
     margin-bottom: 3rem;
 }
@@ -198,38 +241,48 @@ a:active {
 }
 
 .social-icons:hover {
-    transform: scale(1.5, 1.5);
+    transform: var(--expand);
 }
 
 .glove-up {
     width: 4.5rem;
+
     margin-right: 1rem;
+
+    transition: 0.5s linear;
 }
 
 .glove-up:hover {
-    transform: scale(1.5, 1.5);
+    transform: var(--expand);
 }
 
 .go-up {
     width: 12rem;
+
     padding-bottom: 1rem;
 }
 
 .glove-back {
     width: 5rem;
+
     margin-right: 1rem;
+
+    transition: 0.5s linear;
 }
 
 .glove-back:hover {
-    transform: scale(1.5, 1.5);
+    transform: var(--expand);
 }
 
 .go-back {
     width: 15rem;
+
     padding-bottom: 0.5rem;
 }
 
-/*--------------FOOTER------------ */
+/* ============================================
+   FOOTER
+   ============================================ */
 .footer-container {
     margin-top: 5rem;
 }
@@ -239,7 +292,9 @@ a:active {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     gap: 1.5rem;
+
     margin-top: 5rem;
     margin-bottom: 5rem;
 }
@@ -248,8 +303,9 @@ a:active {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin: 1rem auto;
+
     gap: 1rem;
+    margin: 1rem auto;
 }
 
 .thank-you-text {
@@ -257,9 +313,9 @@ a:active {
     font-style: italic;
 }
 
-
-/*------Index Exclusive Styles-----*/
-
+/* ============================================
+   INDEX EXCLUSIVE STYLES
+   ============================================ */
 .homepage-main {
     background: url("https://www.disneytouristblog.com/wp-content/uploads/2015/08/disneyquest-disney-world-downtown-140.jpg") center center / cover no-repeat fixed;
 }
@@ -268,102 +324,138 @@ a:active {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    max-width: fit-content;
+
     margin: -2rem 1rem 2rem 1rem;
     padding: 2.5rem;
+
+    border: 1px solid var(--dq-gold);
+    border-radius: var(--radius-pill);
+
+    background-color: var(--dq-purple);
+
     font-size: var(--small-font);
     font-weight: 500;
     font-style: italic;
     letter-spacing: 0.3rem;
-    background-color: var(--dq-purple);
+    text-align: center;
     color: var(--white-color);
-    max-width: fit-content;
-    border-radius: var(--radius-pill);
-    border: 1px solid var(--dq-gold);
 }
 
 .homepage-h2s {
     width: max-content;
     max-width: 100%;
+
     margin: 5rem auto;
     padding: 1.5rem;
+
     border: 2px solid var(--dq-gold);
     border-radius: var(--radius-card);
+
     background-color: var(--dq-purple);
-    color: var(--white-color);
+
     font-size: var(--large-font);
-    text-transform: capitalize;
     letter-spacing: 0.25rem;
+    text-transform: capitalize;
+    color: var(--white-color);
 }
 
+/* ============================================
+   POP-UP MODAL
+   ============================================ */
 .pop-up-window {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 999;
+
+    width: 100%;
+    height: 100%;
+
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .pop-up {
-    padding: 5rem;
-    color: white;
-    border-radius: var(--radius-card);
-    background-color: var(--dq-purple);
-    box-shadow: 5px 5px 10px gray;
-    max-width: 70rem;
-    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    max-width: 70rem;
+
+    padding: 5rem;
+
+    border-radius: var(--radius-card);
+    background-color: var(--dq-purple);
+    box-shadow: 5px 5px 10px gray;
+
     gap: 1.5rem;
+
+    text-align: center;
+    color: white;
 }
 
 .pop-up-button {
-    color: white;
+    display: inline-block;
+
+    width: max-content;
+
     padding: 2rem;
+
     border: 3px solid var(--dq-gold);
     border-radius: var(--radius-pill);
+
     background-color: var(--dq-purple);
-    color: var(--dq-cyan);
-    display: inline-block;
-    width: max-content;
+
     font-size: var(--medium-font);
+    color: var(--dq-cyan);
 }
 
-
-/*------Attraction Pages Exclusive Styles-----*/
-
+/* ============================================
+   ATTRACTION PAGES — BACKGROUND
+   ============================================ */
 .attractions-bg {
     background: url("https://disneyinsights.com/wp-content/uploads/2017/07/Carpet-1.jpg") center center / cover no-repeat fixed;
 }
 
+
+/* ============================================
+   ATTRACTION PAGE LAYOUT
+   ============================================ */
 .attraction-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+
     margin-bottom: var(--container-gaps);
 }
 
 article {
     width: 65rem;
+
     padding: 3rem;
+
     border: 1rem double var(--dq-purple);
     background-image: var(--notebook-bg);
+    box-shadow: var(--shadow);
 }
 
 .attractions-h1 {
     max-width: fit-content;
+
     margin: auto;
     margin-bottom: 5rem;
     padding: 1rem 2rem;
-    background-image: var(--notebook-bg);
+
     border: 1rem double var(--dq-purple);
+    background-image: var(--notebook-bg);
+    box-shadow: var(--shadow);
 }
 
 .youtube-thumbs {
@@ -373,22 +465,27 @@ article {
 .attraction-pics-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    flex-wrap: wrap;
     justify-items: center;
     align-items: center;
+
     margin-top: var(--container-gaps);
     margin-bottom: var(--container-gaps);
 }
 
-/* Figures & Captions */
 
+/* ============================================
+   FIGURES & CAPTIONS
+   ============================================ */
 .figure-captions {
     padding: 2.5rem 0.5rem;
+
     border: var(--dq-purple) solid 2px;
+    background-image: var(--notebook-bg);
+    box-shadow: var(--shadow);
+
     font-size: var(--x-small-font);
     font-weight: 800;
     letter-spacing: 0.2rem;
-    background-image: var(--notebook-bg);
 }
 
 .social-figures-container {
@@ -396,14 +493,19 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     gap: 1.5rem;
+
     margin-bottom: var(--container-gaps);
 }
 
-/* Interaction Elements (Fun Meter & Call to Action) */
+
+/* ============================================
+   FUN METER & CALL TO ACTION
+   ============================================ */
 .paragraph-links {
-    color: var(--dq-purple);
     font-size: var(--medium-font);
+    color: var(--dq-purple);
 }
 
 .fun-meter {
@@ -411,59 +513,81 @@ article {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     width: 20rem;
     height: 20rem;
+
     margin: 5rem auto 0;
+
     border: 2px solid var(--dq-gold);
     border-radius: 50%;
+
     background-color: var(--dq-purple);
-    color: var(--white-color);
+
     font-size: var(--medium-font);
     letter-spacing: 0.15rem;
     text-align: center;
+    color: var(--white-color);
 }
 
 .call-to-action {
     width: 30rem;
     height: 20rem;
+
     margin: 5rem 0 0 3rem;
-    color: var(--call-to-action);
+
     font-size: var(--small-font);
     font-weight: 1000;
+    color: var(--call-to-action);
 }
 
 
-/*------Contact Us Exclusive Classes----*/
+/* ============================================
+   CONTACT US — FORM
+   ============================================ */
 .contact-us-form {
     display: inline-block;
+
     margin: 5rem auto;
     padding: 4rem;
+
     border: 5px solid var(--dq-gold);
     border-radius: var(--radius-pill);
+
     background-color: var(--dq-purple);
-    color: var(--white-color);
+
     line-height: 2.5rem;
     letter-spacing: 0.1rem;
+    color: var(--white-color);
 }
 
 .contact-us {
     width: 30rem;
+
+    transition: 0.5s linear;
 }
 
 .contact-us:hover {
-    transform: scale(1.5, 1.5);
+    transform: scale(1.3, 1.3);
 }
 
-/* Login Form (Commented out in HTML, organized here just in case) */
+
+/* ============================================
+   LOGIN FORM (COMMENTED IN HTML)
+   ============================================ */
 .log-in {
     display: inline-block;
+
     padding: 2rem;
+
     border: 3px double var(--dq-gold);
     border-radius: var(--radius-card);
+
     background-color: var(--dq-purple);
-    color: var(--white-color);
+
     font-size: var(--x-small-font);
     font-weight: 500;
     line-height: 3rem;
     letter-spacing: 0.1rem;
+    color: var(--white-color);
 }

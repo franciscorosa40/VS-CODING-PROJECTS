@@ -1,0 +1,40 @@
+:root {
+    --bs-body-color: rgb(43, 43, 43);
+}
+
+.btn-primary {
+    background-color: blueviolet;
+    border: 1px solid gold;
+}
+
+.min-height-feautre-img {
+    height: 300px;
+}
+
+.mb-6 {
+    margin-bottom: 64px;
+}
+
+.mb-7 {
+    margin-bottom: 80px;
+}
+
+.mb-8 {
+    margin-bottom: 96px;
+}
+
+.mb-9 {
+    margin-bottom: 112px;
+}
+
+.mb-10 {
+    margin-bottom: 128px;
+}
+
+.mb-11 {
+    margin-bottom: 144pxpx;
+}
+
+.mb-12 {
+    margin-bottom: 160px;
+}
