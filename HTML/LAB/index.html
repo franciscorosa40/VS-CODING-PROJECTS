@@ -10,83 +10,84 @@
 </head>
 
 <body id="lab-text">
-    <div class="container" <h1>Dynasty Warriors</h1>
-        <h1>Wei</h2>
-            <h3>Wu</h2>
-                <h4>Shu</h4>
+    <div class="container">
+        <h1>Dynasty Warriors</h1>
+        <h2>Wei</h2>
+        <h3>Wu</h3>
+        <h4>Shu</h4>
 
-                <p class="tldr-dynasty">Dynasty Warriors is a series of Japanese hack and slash action video games
-                    created by Omega Force and Koei.
-                    The
-                    series is a spin-off of Koei's turn-based strategy Romance of the Three Kingdoms series, based upon
-                    the
-                    Chinese
-                    novel of the same name, which is a romanticised retelling of the Chinese Three Kingdoms period.
-                    Dynasty
-                    Warriors is a series of Japanese hack and slash action video games
-                    created by Omega Force and Koei.
-                    The
-                    series is a spin-off of Koei's turn-based strategy Romance of the Three Kingdoms series, based upon
-                    the
-                    Chinese
-                    novel of the same name, which is a romanticised retelling of the Chinese Three Kingdoms period.
-                    Dynasty
-                    Warriors is a series of Japanese hack and slash action video games
-                    created by Omega Force and Koei.
-                    The
-                    series is a spin-off of Koei's turn-based strategy Romance of the Three Kingdoms series, based upon
-                    the
-                    Chinese
-                    novel of the same name, which is a romanticised retelling of the Chinese Three Kingdoms period.</p>
-                <h5>The <span id="three-kingdoms">Three</span> Kingdoms</h5>
-                <p>Wei, Wu, Shu</p>
-                <ul>
-                    <li>Cao Cao</li>
-                    <li>Sun Quan</li>
-                    <li>Liu Bei</li>
-                </ul>
+        <p class="tldr-dynasty">Dynasty Warriors is a series of Japanese hack and slash action video games
+            created by Omega Force and Koei.
+            The
+            series is a spin-off of Koei's turn-based strategy Romance of the Three Kingdoms series, based upon
+            the
+            Chinese
+            novel of the same name, which is a romanticised retelling of the Chinese Three Kingdoms period.
+            Dynasty
+            Warriors is a series of Japanese hack and slash action video games
+            created by Omega Force and Koei.
+            The
+            series is a spin-off of Koei's turn-based strategy Romance of the Three Kingdoms series, based upon
+            the
+            Chinese
+            novel of the same name, which is a romanticised retelling of the Chinese Three Kingdoms period.
+            Dynasty
+            Warriors is a series of Japanese hack and slash action video games
+            created by Omega Force and Koei.
+            The
+            series is a spin-off of Koei's turn-based strategy Romance of the Three Kingdoms series, based upon
+            the
+            Chinese
+            novel of the same name, which is a romanticised retelling of the Chinese Three Kingdoms period.</p>
+        <h5>The <span id="three-kingdoms">Three</span> Kingdoms</h5>
+        <p>Wei, Wu, Shu</p>
+        <ul>
+            <li>Cao Cao</li>
+            <li>Sun Quan</li>
+            <li>Liu Bei</li>
+        </ul>
 
-                <form action="/api/vi/journals" method="post">
-                    <label for="main-allegiance">Choose your Lord</label>
-                    <input id="main-allegiance" type="text" name="allegiance" placeholder="Lord">
+        <form action="/api/vi/journals" method="post">
+            <label for="main-allegiance">Choose your Lord</label>
+            <input id="main-allegiance" type="text" name="allegiance" placeholder="Lord">
 
-                    <br>
+            <br>
 
-                    <label for="start-time"> When can you start?</label>
-                    <select id="start-time" name="starts">
-                        <option value="now">Now</option>
-                        <option value="later">Later</option>
-                        <option value="never">Never</option>
-                    </select>
+            <label for="start-time"> When can you start?</label>
+            <select id="start-time" name="starts">
+                <option value="now">Now</option>
+                <option value="later">Later</option>
+                <option value="never">Never</option>
+            </select>
 
-                    <br>
+            <br>
 
-                    <label for="reason-allegiance">Why choose this allegiance?</label>
-                    <div><textarea id="reason-allegiance" name="reason" placeholder="Reason" cols="30" rows="5">
+            <label for="reason-allegiance">Why choose this allegiance?</label>
+            <div><textarea id="reason-allegiance" name="reason" placeholder="Reason" cols="30" rows="5">
         </textarea></div>
-                    <button type="submit">Enter</button>
-                    <button type="reset">Reset</button>
-                </form>
+            <button type="submit">Enter</button>
+            <button type="reset">Reset</button>
+        </form>
 
-                <br>
+        <br>
 
-                <form action="/api/v1/journals" method="get">
-                    <label for="search-bar">Search</label>
-                    <input id="search-bar" type="text" name="search" placeholder="Search">
+        <form action="/api/v1/journals" method="get">
+            <label for="search-bar">Search</label>
+            <input id="search-bar" type="text" name="search" placeholder="Search">
 
-                    <label for="journal-category">Journal Category</label>
-                    <select id="journal-category" name="category">
-                        <option value="idea">Idea</option>
-                        <option value="task">Task</option>
-                        <option value="memory">Memory</option>
-                    </select>
-                    <button type="submit">Submit</button>
-                </form>
+            <label for="journal-category">Journal Category</label>
+            <select id="journal-category" name="category">
+                <option value="idea">Idea</option>
+                <option value="task">Task</option>
+                <option value="memory">Memory</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
 
-                <br>
+        <br>
 
-                <form action="/Kingdoms/Rulers" method="post">
-                    <input id="ruler-1" name="Cao Cao" type="checkbox" />
+        <form action="/Kingdoms/Rulers" method="post">
+            <input id="ruler-1" name="Cao Cao" type="checkbox" />
     </div>
     <label for="ruler-1">Cao Cao</label>
 
