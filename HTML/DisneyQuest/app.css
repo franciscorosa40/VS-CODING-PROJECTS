@@ -23,6 +23,7 @@
     --notebook-bg: url("https://www.textures4photoshop.com/tex/thumbs/seamless-notebook-paper-texture-free-thumb36.jpg");
     --shadow: 5px 5px 5px 1px black;
     --expand: scale(1.5, 1.5);
+    --expand-media: scale(1.1, 1.1);
 }
 
 /* ============================================
@@ -169,13 +170,44 @@ a:active {
     border-radius: 50%;
     outline: 5px solid var(--dq-gold);
     background-color: var(--dq-purple);
+    transition: 1ms normal;
+}
+
+.chat-container:hover {
+    transform: scale(1.15, 1.15);
 }
 
 .chat-icon {
     width: 6.6rem;
     height: 6.6rem;
+    color: var(--dq-cyan);
+}
 
-    transform: scale(-1, 1);
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+
+    bottom: 2rem;
+    left: 2rem;
+
+    width: 10rem;
+    height: 10rem;
+
+    border-radius: 50%;
+    outline: 5px solid var(--dq-gold);
+    background-color: var(--dq-purple);
+    transition: 1ms normal;
+}
+
+.profile-container:hover {
+    transform: scale(1.15, 1.15);
+}
+
+.profile-icon {
+    width: 6.6rem;
+    height: 6.6rem;
     color: var(--dq-cyan);
 }
 
@@ -233,6 +265,14 @@ a:active {
 
     margin-top: 5rem;
     margin-bottom: 3rem;
+}
+
+.media {
+    transition: 0.2s linear;
+}
+
+.media:hover {
+    transform: var(--expand-media);
 }
 
 .social-icons {
