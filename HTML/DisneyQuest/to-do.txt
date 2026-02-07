@@ -2,7 +2,7 @@ To Do List:
 
 - Cuztomize log-in icon color.
 
-- Add comments section to each attraction.
+-All same thumbnail captions for Buzz???
 
 - Missing img in Aliens!
 

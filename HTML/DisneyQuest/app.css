@@ -512,6 +512,34 @@ article {
     margin-bottom: var(--container-gaps);
 }
 
+.comments-section-container {
+    margin-top: 20rem;
+}
+
+.comments-section-label {
+    padding: 1rem 0.5rem;
+
+    border: var(--dq-purple) solid 5px;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+
+    font-size: var(--small-font);
+    font-weight: 800;
+    letter-spacing: 0.2rem;
+}
+
+.comments-section {
+    background-image: var(--notebook-bg);
+    border: var(--dq-purple) solid 5px;
+    font-size: var(--medium-font);
+}
+
+.comments-section-button {
+    font-size: var(--medium-font);
+    border-radius: 15%;
+    padding: 1rem;
+}
+
 
 /* ============================================
    FIGURES & CAPTIONS
