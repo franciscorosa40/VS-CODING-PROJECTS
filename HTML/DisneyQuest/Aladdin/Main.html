@@ -81,7 +81,7 @@
                 </article>
 
                 <aside>
-                    <figure class="youtube-thumbs"><iframe width="560" height="315"
+                    <figure class="youtube-thumbs"><iframe class="media" width="560" height="315"
                             src="https://www.youtube.com/embed/trX1TSMVM28?si=HTlm9Z_J-IRKKmtN"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -89,7 +89,7 @@
                         <figcaption class="figure-captions">Simulated VR experience of the attraction.
                         </figcaption>
                     </figure>
-                    <figure class="youtube-thumbs"><iframe width="560" height="315"
+                    <figure class="youtube-thumbs"><iframe class="media" width="560" height="315"
                             src="https://www.youtube.com/embed/1GeHE2K_Q1M?si=3J-N6X6BHWhh0JkJ"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -101,14 +101,14 @@
 
             <section class="attraction-pics-container">
                 <figure>
-                    <a href="https://www.flickr.com/photos/aloha75/30184254683" target="_blank"><img height="350"
-                            src="https://live.staticflickr.com/5719/30184254683_f570c4db96_b.jpg"
+                    <a href="https://www.flickr.com/photos/aloha75/30184254683" target="_blank"><img class="media"
+                            height="350" src="https://live.staticflickr.com/5719/30184254683_f570c4db96_b.jpg"
                             alt="The front entrance of the Disney Quest Aladdin attraction."></a>
                     <figcaption class="figure-captions">The front entrance for the attraction.</figcaption>
                 </figure>
                 <figure>
                     <a href="https://commons.wikimedia.org/wiki/File:DisneyQuest_Aladdin.jpg" target="_blank"><img
-                            height="350"
+                            height="350" class="media"
                             src="https://upload.wikimedia.org/wikipedia/commons/1/16/DisneyQuest_Aladdin.jpg"
                             alt="Up close view of the seat and VR headeset for attraction."></a>
                     <figcaption class="figure-captions">Up close view of the seat and VR headeset used on the
@@ -116,12 +116,24 @@
                 </figure>
                 <figure>
                     <a href="https://uk.pinterest.com/pin/aladdins-magic-carpet-ride-virtual-reality-game-at-disneyquest-walt-disney-world-resort--64387469646951132/"
-                        target="_blank"><img height="350"
+                        target="_blank"><img height="350" class="media"
                             src="https://i.pinimg.com/736x/a9/e8/e9/a9e8e9e4d55393262a00522504b88666.jpg"
                             alt="View of VRs and seats next to the other with some pillar facade."></a>
                     <figcaption class="figure-captions">View of VRs and seats next to the other with some pillar
                         facade.</figcaption>
                 </figure>
+            </section>
+
+            <section class="comments-section-container">
+                <form action="/submit-comment" method="POST">
+                    <label class="comments-section-label" for="submission-details">What Did You Think About This
+                        Attraction?</label>
+                    <div><textarea class="comments-section" id="submission-details" name="aladdin-comment"
+                            placeholder="Leave a Comment Here!" cols="75" rows="10" minlength="5" required></textarea>
+                    </div>
+                    <br>
+                    <button class="comments-section-button" type="submit">Post!</button>
+                </form>
             </section>
 
         </main>
@@ -158,6 +170,10 @@
             <div>
                 <p class="thank-you-text">Made by Francisco Rosa</p>
         </footer>
+
+        <div class="profile-container">
+            <img class="profile-icon" src="../images/profile.svg" alt="profile icon">
+        </div>
 
         <div class="chat-container">
             <img class="chat-icon" src="../images/chat-icon.svg" alt="chat icon">

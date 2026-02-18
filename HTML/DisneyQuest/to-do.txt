@@ -1,10 +1,16 @@
 To Do List:
 
-- Add log-in box to top of pages.
+-Get rid of prior template for log in?
 
-- Add comments section to each attraction.
+- Cuztomize log-in icon color.
 
-- Add breakpoints!
+-All same thumbnail captions for Buzz???
+
+- Missing img in Aliens!
+
+-Lost img in Animation
+
+-Img expand overlap in Radio...
 
 Refactor repeating styles:
 The border styles and background image styles for .figure-captions, article, and .attractions-h1 are very similar. You could create a utility class (e.g., .notebook-card) and apply it to all three elements to reduce repetition.

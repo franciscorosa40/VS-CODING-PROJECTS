@@ -96,23 +96,36 @@
 
             <section class="attraction-pics-container">
                 <figure>
-                    <a href="https://www.parkeology.com/page/49" target="_blank"><img height="350"
+                    <a href="https://www.parkeology.com/page/49" target="_blank"><img height="350" class="media"
                             src="https://www.parkeology.com/wp-content/uploads/2010/04/treasure-of-the-incas-disney-quest-750x450.jpg"
                             alt="Logo for the Treasure of the Incas."></a>
                     <figcaption class="figure-captions">Logo for the Treasure of the Incas.</figcaption>
                 </figure>
                 <figure>
                     <a href="https://www.worthpoint.com/worthopedia/1999-disney-quest-treasure-incas-pin-1878741827"
-                        target="_blank"><img height="350" src="inca-pin.jpg" alt="A pin for Treasure of the Incas."></a>
+                        target="_blank"><img height="350" class="media" src="inca-pin.jpg"
+                            alt="A pin for Treasure of the Incas."></a>
                     <figcaption class="figure-captions">A pin for Treasure of the Incas.</figcaption>
                 </figure>
                 <figure>
                     <a href="https://themeparkreview.com/forum/topic/17320-photo-tr-orlando-parks-and-disneyquest/"
-                        target="_blank"><img height="350"
+                        target="_blank"><img height="350" class="media"
                             src="https://themeparkreview.com/forum/uploads/monthly_2007_06/21-inca.jpg.cddf15530d6d21e2947873d1c67530bf.jpg"
                             alt="Topview of the Treasure of the Incas."></a>
                     <figcaption class="figure-captions">Topview of the Treasure of the Incas.</figcaption>
                 </figure>
+            </section>
+
+            <section class="comments-section-container">
+                <form action="/submit-comment" method="POST">
+                    <label class="comments-section-label" for="submission-details">What Did You Think About This
+                        Attraction?</label>
+                    <div><textarea class="comments-section" id="submission-details" name="incas_comment"
+                            placeholder="Leave a Comment Here!" cols="75" rows="10" minlength="5" required></textarea>
+                    </div>
+                    <br>
+                    <button class="comments-section-button" type="submit">Post!</button>
+                </form>
             </section>
         </main>
 
@@ -151,6 +164,10 @@
             </div>
 
         </footer>
+
+        <div class="profile-container">
+            <img class="profile-icon" src="../images/profile.svg" alt="profile icon">
+        </div>
 
         <div class="chat-container">
             <img class="chat-icon" src="../images/chat-icon.svg" alt="chat icon">

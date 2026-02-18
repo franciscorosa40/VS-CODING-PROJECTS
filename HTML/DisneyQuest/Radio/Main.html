@@ -77,7 +77,7 @@
                 </article>
 
                 <aside>
-                    <figure class="youtube-thumbs"><iframe width="560" height="315"
+                    <figure class="youtube-thumbs"><iframe class="media" width="560" height="315"
                             src="https://www.youtube.com/embed/aky9tjxacKk?si=bS4krrLFBVRAA5KE"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -85,7 +85,7 @@
                         <figcaption class="figure-captions">A guest making a song.</figcaption>
                     </figure>
 
-                    <figure class="youtube-thumbs"><iframe width="560" height="315"
+                    <figure class="youtube-thumbs"><iframe class="media" width="560" height="315"
                             src="https://www.youtube.com/embed/saDoLdlzsvE?si=94gY9SnVbD01MMz1"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -93,7 +93,7 @@
                         <figcaption class="figure-captions">Another guest making a song.</figcaption>
                     </figure>
 
-                    <figure class="youtube-thumbs"><iframe width="560" height="315"
+                    <figure class="youtube-thumbs"><iframe class="media" width="560" height="315"
                             src="https://www.youtube.com/embed/VOarjAqGqxw?si=fbYfU6EWCKwqwyA_"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -106,7 +106,7 @@
             <section class="attraction-pics-container">
                 <figure>
                     <a href="https://www.amazon.com/-/es/Patrick-L/dp/B08P9SYWKG" target="_blank"><img height="350"
-                            src="https://m.media-amazon.com/images/I/81AH3Fv0CwL._UF1000,1000_QL80_.jpg"
+                            class="media" src="https://m.media-amazon.com/images/I/81AH3Fv0CwL._UF1000,1000_QL80_.jpg"
                             alt="The front for a CD from the Radio Disney Song Maker station."></a>
                     <figcaption class="figure-captions">The front for a CD from the Radio Disney Song Maker
                         station.
@@ -114,7 +114,7 @@
                 </figure>
                 <figure>
                     <a href="https://www.amazon.com/-/es/Patrick-L/dp/B08P9SYWKG" target="_blank"><img height="350"
-                            src="https://m.media-amazon.com/images/I/81cm4ZdsEIL._UF1000,1000_QL80_.jpg"
+                            class="media" src="https://m.media-amazon.com/images/I/81cm4ZdsEIL._UF1000,1000_QL80_.jpg"
                             alt="The inside for a CD from the Radio Disney Song Maker station."></a>
                     <figcaption class="figure-captions">The inside for a CD from the Radio Disney Song Maker
                         station.
@@ -122,11 +122,23 @@
                 </figure>
                 <figure>
                     <a href="https://www.disboards.com/media/disney-quest-0184.50378/" target="_blank"><img height="350"
-                            src="https://www.disboards.com/media/disney-quest-0184.50378/full"
+                            class="media" src="https://www.disboards.com/media/disney-quest-0184.50378/full"
                             alt="The music booths for Radio Disney Song Maker attraction."></a>
                     <figcaption class="figure-captions">The music booths for Radio Disney Song Maker attraction.
                     </figcaption>
                 </figure>
+            </section>
+
+            <section class="comments-section-container">
+                <form action="/submit-comment" method="POST">
+                    <label class="comments-section-label" for="submission-details">What Did You Think About This
+                        Attraction?</label>
+                    <div><textarea class="comments-section" id="submission-details" name="radio_comment"
+                            placeholder="Leave a Comment Here!" cols="75" rows="10" minlength="5" required></textarea>
+                    </div>
+                    <br>
+                    <button class="comments-section-button" type="submit">Post!</button>
+                </form>
             </section>
 
         </main>
@@ -166,6 +178,10 @@
             </div>
 
         </footer>
+
+        <div class="profile-container">
+            <img class="profile-icon" src="../images/profile.svg" alt="profile icon">
+        </div>
 
         <div class="chat-container">
             <img class="chat-icon" src="../images/chat-icon.svg" alt="chat icon">

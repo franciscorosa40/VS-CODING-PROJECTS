@@ -80,7 +80,7 @@
                 </article>
 
                 <aside>
-                    <figure class="youtube-thumbs"><iframe width="560" height="315"
+                    <figure class="youtube-thumbs"><iframe class="media" width="560" height="315"
                             src="https://www.youtube.com/embed/JtU96CYRWs8?si=ph9jU7tKiECy8hLR"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -88,7 +88,7 @@
                         <figcaption class="figure-captions">Full ride-through POV.
                         </figcaption>
                     </figure>
-                    <figure class="youtube-thumbs"><iframe width="560" height="315"
+                    <figure class="youtube-thumbs"><iframe class="media" width="560" height="315"
                             src="https://www.youtube.com/embed/zFzN2y0-R-k?si=2fpyk7abocXfGnWR"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -97,7 +97,7 @@
                             additions.
                         </figcaption>
                     </figure>
-                    <figure class="youtube-thumbs"><iframe width="560" height="315"
+                    <figure class="youtube-thumbs"><iframe class="media" width="560" height="315"
                             src="https://www.youtube.com/embed/RwbE8vuhQ9w?si=e_kunEaVGx1p2d4r"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -111,8 +111,8 @@
             <section>
                 <figure class="social-figures-container">
                     <a href="https://www.instagram.com/p/DIEYoDspzRm/?img_index=5" target="_blank"
-                        rel="noopener noreferrer"><img src="extra alien.JPG" alt="The cockpit of the attraction."
-                            style="width: 905px; height: 547px;"></a>
+                        rel="noopener noreferrer"><img class="media" src="extra alien.JPG"
+                            alt="The cockpit of the attraction." style="width: 905px; height: 547px;"></a>
                     <figcaption class="figure-captions">The cockpit of the attraction.
                     </figcaption>
                 </figure>
@@ -121,7 +121,7 @@
             <section class="attraction-pics-container">
                 <figure>
                     <a href="https://www.orlandosentinel.com/2011/04/01/disney-details-are-key-to-kingdom-keepers"
-                        target="_blank"><img height="350"
+                        target="_blank"><img height="350" class="media"
                             src="https://www.orlandosentinel.com/wp-content/uploads/migration/2011/04/01/62NCMSZU6JAGFOGF5B3D52L3HA.jpg?w=620"
                             alt="Models from the Attraction in Display"></a>
                     <figcaption class="figure-captions">Models from the attraction in Display.
@@ -129,11 +129,23 @@
                 </figure>
                 <figure>
                     <a href="https://www.reddit.com/r/Defunctland/comments/tlwkjg/does_anybody_know_where_the_models_that_were_part"
-                        target="_blank"><img height="350" src="alien model.JPG"
+                        target="_blank"><img height="350" class="media" src="alien model.JPG"
                             alt="Another Model for the Attraction."></a>
                     <figcaption class="figure-captions">Another Model for the Attraction.
                     </figcaption>
                 </figure>
+            </section>
+
+            <section class="comments-section-container">
+                <form action="/submit-comment" method="POST">
+                    <label class="comments-section-label" for="submission-details">What Did You Think About This
+                        Attraction?</label>
+                    <div><textarea class="comments-section" id="submission-details" name="alien_comment"
+                            placeholder="Leave a Comment Here!" cols="75" rows="10" minlength="5" required></textarea>
+                    </div>
+                    <br>
+                    <button class="comments-section-button" type="submit">Post!</button>
+                </form>
             </section>
 
         </main>
@@ -171,6 +183,10 @@
             <div>
                 <p class="thank-you-text">Made by Francisco Rosa</p>
         </footer>
+
+        <div class="profile-container">
+            <img class="profile-icon" src="../images/profile.svg" alt="profile icon">
+        </div>
 
         <div class="chat-container">
             <img class="chat-icon" src="../images/chat-icon.svg" alt="chat icon">

@@ -77,6 +77,18 @@
                     </section>
                 </article>
             </section>
+
+            <section class="comments-section-container">
+                <form action="/submit-comment" method="POST">
+                    <label class="comments-section-label" for="submission-details">What Did You Think About This
+                        Attraction?</label>
+                    <div><textarea class="comments-section" id="submission-details" name="magic_comment"
+                            placeholder="Leave a Comment Here!" cols="75" rows="10" minlength="5" required></textarea>
+                    </div>
+                    <br>
+                    <button class="comments-section-button" type="submit">Post!</button>
+                </form>
+            </section>
         </main>
 
         <footer>
@@ -114,6 +126,10 @@
             </div>
 
         </footer>
+
+        <div class="profile-container">
+            <img class="profile-icon" src="../images/profile.svg" alt="profile icon">
+        </div>
 
         <div class="chat-container">
             <img class="chat-icon" src="../images/chat-icon.svg" alt="chat icon">
