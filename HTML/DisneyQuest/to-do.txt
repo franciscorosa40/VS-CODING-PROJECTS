@@ -1,5 +1,7 @@
 To Do List:
 
+-Get rid of prior template for log in?
+
 - Cuztomize log-in icon color.
 
 -All same thumbnail captions for Buzz???
