@@ -1,31 +1,39 @@
+window.alert("Welcome to the Shire!")
+
 // VARIABLES
 
-let name = prompt("What is your name?");
+let userName = prompt("What is your name?")
+
+let company = Number(prompt("How many are in your company?"))
+
+let myName = "Smeagol"
+
+let smeagolParty = company + 1
 
 //OUTPUT TO CONSOLE
 
-if (name == "Bilbo") {
+if (userName == "Bilbo") {
     console.log("Hand over the ring, Bilbo!")
 }
 
 else {
-    console.log("Hello, " + name + "!")
+    console.log("Hello, " + userName + "!")
 }
 
-let company = prompt("How many are in your company?")
-
-if (company <= 10) {
-    console.log("You're going to need more than that to make it to Mordor!")
-}
-
-else {
-    console.log("That's a proper company!")
-}
-
-if (company < 2) {
+if (company == 1) {
     console.log("You are not making it alone!")
 }
 
 else {
     console.log("You are wise for not going alone!")
 }
+
+if (company <= 10) {
+    console.log("You're going to need more than that to make it to Mordor!")
+}
+
+else {
+    console.log("And with a proper company at that!")
+}
+
+console.log(`My name is ${myName}. If you add me to your party, we would be ${smeagolParty}. What do you say?`)
